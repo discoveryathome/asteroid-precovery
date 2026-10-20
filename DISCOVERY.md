@@ -35,7 +35,7 @@ The catalogue has archive searches (30), astrometric verification (30), image-pi
 
 ## Review and contribution policy
 
-No maintainer has agreed; review capacity is undeclared, not fabricated. `review.paused` remains true and the manifest's UNASSIGNED entry is an explicitly vacant role required by the v0 schema. No hubs are authorized. The project can be inspected and developed locally but cannot accept donated scientific contributions yet.
+No scientific maintainer has agreed; review capacity is undeclared, not fabricated. `review.paused` remains true and the manifest's UNASSIGNED entry is an explicitly vacant role required by the v0 schema. Discovery@Home may list this public proposal, but the hub may not send donated sessions or post to the project. The project can be inspected and developed locally; scientific contributions still require a consenting reviewer.
 
 A future reviewer must inspect immutable inputs, calibration and timing provenance, source morphology, motion between exposures, stationary and artifact alternatives, and known-object confusion. Recompute astrometry independently and resolve the plate-log discrepancy before discussing any submission. A current-orbit fit is a consistency check; proposed new observations require appropriate independent linkage/orbit analysis. Record identity, date, evidence hashes, decision, reasons and unresolved obligations. A human approval is a separate decision; software has no path to grant it.
 

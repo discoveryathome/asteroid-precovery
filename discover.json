@@ -13,7 +13,7 @@
       "name": "UNASSIGNED (vacant role; no consenting maintainer)"
     }
   ],
-  "canonical_repo": "file:///Users/colkitt/discover-work/incubatedPilots/asteroid-precovery/start-asteroid-precovery",
+  "canonical_repo": "https://github.com/discoveryathome/asteroid-precovery",
   "entry": {
     "agents": "AGENTS.md",
     "project": "DISCOVERY.md",
@@ -43,6 +43,13 @@
       "citation"
     ]
   },
+  "hubs": [
+    {
+      "hub": "discoveryathome/discover",
+      "list": true,
+      "push": []
+    }
+  ],
   "process_changed_on": "2026-10-20",
   "requirements": {
     "ram_gb": 2,
@@ -51,6 +58,6 @@
   },
   "review": {
     "paused": true,
-    "note": "LOCAL proposal. No maintainer has consented and weekly capacity is unassigned. Placeholder maintainer entry is a vacant role required by v0 schema, not a person."
+    "note": "Public research proposal, paused to donated sessions. No scientific maintainer has consented and weekly review capacity is unassigned. Hub listing consent does not authorize scientific acceptance or contributor traffic. Placeholder maintainer entry is a vacant role required by v0 schema, not a person."
   }
 }

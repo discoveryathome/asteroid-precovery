@@ -1,4 +1,4 @@
-# Asteroid precovery — local Discovery@Home pilot
+# Asteroid precovery — Discovery@Home research pilot
 
 This pilot reproduces **1999 AN10 on two Palomar plates from January 26, 1955**, using public archival FITS pixels, frozen JPL predictions and a Gaia DR3 calibration subset. Both trails pass the replication screen; four negative controls fail. **No new observation is claimed, accepted, announced or submitted.** Scientific review and a consenting maintainer remain unassigned.
 
@@ -46,7 +46,7 @@ Open [the evidence guide](review/EVIDENCE.md), [measurements](data/derived/measu
 
 ## Research and review
 
-Start with [AGENTS.md](AGENTS.md) and [DISCOVERY.md](DISCOVERY.md). Four weighted tracks cover archive searches, astrometric verification, image-pipeline improvements and expert review. The project is LOCAL, paused to donors and has no hub consent or external repository. A maintainer must explicitly agree to accept contributions before opening it.
+Start with [AGENTS.md](AGENTS.md) and [DISCOVERY.md](DISCOVERY.md). Four weighted tracks cover archive searches, astrometric verification, image-pipeline improvements and expert review. The public repository may be listed by the Discovery@Home hub, but donated sessions remain paused. No scientific maintainer or review capacity is assigned; one must explicitly agree before contributions can be accepted.
 
 Original code: MIT. Original prose: CC BY 4.0. External images, catalogue extracts and literature retain their original rights and credits; see [data credits](DATA_LICENSES.md).
 
