@@ -41,6 +41,10 @@
       "service": "MOST live smoke query",
       "url": "https://irsa.ipac.caltech.edu/cgi-bin/MOST/nph-most?catalog=wise_merge&input_type=name_input&obj_name=137108&obs_begin=2010+01+01&obs_end=2010+02+01&output_mode=Brief&ephem_step=0.05",
       "result": "HTTP 504 Gateway Time-out; not a successful integration test. Offline DSS replication does not depend on MOST."
+    },
+    {
+      "service": "IRSA cutout metadata table",
+      "result": "HTTP 504 retrieving result.tbl after all three required FITS cutouts succeeded; Atlas coverage table and Cutouts XML were retained."
     }
   ]
 }

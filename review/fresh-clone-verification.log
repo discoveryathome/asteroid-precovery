@@ -1,0 +1,34 @@
+.venv/bin/python -m unittest discover -s tests -v
+test_byte_range_and_archive_service_cutouts_agree (test_science.ArchivePixelAgreement.test_byte_range_and_archive_service_cutouts_agree) ... ok
+test_covariance_and_time_bounds (test_science.ScientificInvariants.test_covariance_and_time_bounds) ... ok
+test_known_injected_trail_measured_not_echoed (test_science.ScientificInvariants.test_known_injected_trail_measured_not_echoed) ... ok
+test_ra_wrap_and_polar_projection (test_science.ScientificInvariants.test_ra_wrap_and_polar_projection) ... ok
+test_alternatives_override_perfect_residual (test_verifier.VerificationTests.test_alternatives_override_perfect_residual) ... ok
+test_corruption_rejected (test_verifier.VerificationTests.test_corruption_rejected) ... ok
+test_invalid_archive_time_rejected (test_verifier.VerificationTests.test_invalid_archive_time_rejected) ... ok
+test_missing_nonfinite_wrong_epoch_and_mismatch (test_verifier.VerificationTests.test_missing_nonfinite_wrong_epoch_and_mismatch) ... ok
+test_screen_never_accepts_scientifically (test_verifier.VerificationTests.test_screen_never_accepts_scientifically) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.130s
+
+OK
+.venv/bin/python -m precovery.reproduce
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 35132.420139 from DATE-OBS'. [astropy.wcs.wcs]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 35132.451389 from DATE-OBS'. [astropy.wcs.wcs]
+Matplotlib is building the font cache; this may take a moment.
+{
+  "documented_exposures": 2,
+  "published_endpoints": 4,
+  "pair_motion_consistent": true,
+  "positives_passing": 2,
+  "negatives_rejected": 4,
+  "historical_arc_start_extension_days": 16057.597916666668,
+  "historical_extension_precision": "Discovery date known to day; midnight convention used, so interpret extension approximately.",
+  "new_arc_extension_days": 0,
+  "orbital_uncertainty_improvement": null,
+  "orbital_improvement_status": "Not estimated: requires consistent orbit refits with/without precovery, same weighting and epoch; current JPL solution already includes these data.",
+  "scientific_acceptance": false,
+  "mpc_submission": false
+}
+PASS: 2 documented exposures reproduced; 4 negative controls rejected; review pending; no submission.

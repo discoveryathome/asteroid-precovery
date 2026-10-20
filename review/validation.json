@@ -1,0 +1,24 @@
+{
+  "tested_commit": "caa35961223d6ae72812869c760b8d62c4afef9f",
+  "mode": "fresh local shallow clone",
+  "python": "3.14.6",
+  "platform": "macOS arm64",
+  "dependencies": "requirements.lock",
+  "dependency_install": "Successful clean virtual environment, binary wheels only",
+  "tests_passed": 9,
+  "positive_exposures_reproduced": 2,
+  "negative_controls_rejected": 4,
+  "evidence_files_reproduced_byte_for_byte": 12,
+  "track_first_steps_passed": 4,
+  "protocol_validation": "conformant",
+  "json_schemas": "all three valid with format checks",
+  "scientific_review": "pending; this is author-run reproducibility validation, not an independent scientific review",
+  "network_during_reduction": false,
+  "mpc_submission": false,
+  "external_publication": false,
+  "limitations": [
+    "MOST live smoke query returned HTTP 504",
+    "Plate timestamps need expert resolution",
+    "Orbit uncertainty improvement was not computed"
+  ]
+}
