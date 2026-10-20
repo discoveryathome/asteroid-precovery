@@ -1,0 +1,307 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" type="text/css" media="screen,projection,print" href="/applications/Cutouts/cutouts.css" />
+    <title>Digital Sky Survey Atlas (DSS) Cutouts</title>
+
+
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/print_style.css" />
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/ui.css" />
+<script type="text/javascript" src="/ui_verbose.js"></script>
+
+<!--[if lt IE 7]>
+<style type="text/css" media="screen, projection">
+#irsa-menu li
+{
+float: left;
+height: 1%;
+}
+#irsa-menu a
+{
+height: 1%;
+}
+</style>
+<![endif]-->
+</head>
+<body >
+
+<div id="irsa-banner"   style= "min-width:768px; min-height:95px"></div>
+<script type="text/javascript" language='javascript' src='/frontpage/frontpage.nocache.js'> </script>
+
+<div id="content">
+<!--   #include virtual="/include/sysnotice.html"  -->
+
+
+<form method="post"
+      action="/cgi-bin/bgServices/nph-bgExec"
+      target="Cutouts_Exec"
+      enctype="multipart/form-data">
+
+    <input type="hidden" name="bgApp" value="/Cutouts/nph-cutouts" />
+    <input type="hidden" name="mission" value="DSS" />
+    <input type="hidden" name="hdr_location" value="\DSSDataPath\" />
+    <input type="hidden" name="min_size" value="1" />
+    <input type="hidden" name="max_size" value="1600" />
+    <input type="hidden" name="units" value="arcsec" />
+
+
+<div id="ds">
+    <div id="ds_title">Digital Sky Survey Atlas (DSS) Cutouts</div>
+
+
+
+
+    <div class="ds_header">
+        <table border="0" width="100%">
+        <tr>
+          <td>
+        <a href="/applications/Cutouts/docs/instructions.html">Cutouts Instructions</a> 
+          </td><td>
+        <a href="/applications/Cutouts/docs/CutoutsProgramInterface.html">Program Interface</a>
+          </td><td>
+        <a href="/data/DSS">DSS Archive</a>
+          </td>
+        </tr>
+        </table>
+
+    </div>
+
+
+<div class="ds_caption">
+The Digitized Sky Survey copyright &copy; 1994, Association of Universities  
+for Research in Astronomy, Inc. The Digitized Sky Surveys were  
+produced at the Space Telescope Science Institute under U.S.  
+Government grant NAG W-2166. DSS participating organizations:
+
+<a href="http://www.roe.ac.uk/">Royal Observatory (ROE)</a>, 
+<a href="http://www.aao.gov.au/"> Anglo-Australian Observatory (AAO)</a>,
+<a href="http://www.stsci.edu/">The Association of Universities for Research in Astronomy (AURA)/Space Telescope Science Institute (STScI)</a>
+</div>
+
+<div>
+
+    <div id="ds_form">
+
+    <!-- Inputs -->
+    <table class="main">
+
+        <!-- Single target -->
+        <tr>
+        <th><input type="radio" name="outtype" value="single" checked="checked" />
+            Single Location</th>
+        <td>
+            <table class="inputs">
+            <tr>
+                <th>Coordinate/Object:</th>
+                <td>
+                    <input type="text" name="locstr" size="35" maxlength="100"
+                           onfocus="javascript:setCutoutsRadio('single');" />
+                </td>
+            </tr>
+            <tr>
+                <th>Cutout Size:</th>
+                <td>
+                    <input type="text" name="sizeX" size="10" value="240" maxlength="100" />
+                    (arcsec)
+                    <span class="ds_range">
+                        [range: 1-1600 arcsec]
+                    </span>
+                </td>
+            </tr>
+            </table>
+
+            <!-- Examples of valid coordinates -->
+            <div class="ds_form_ex">
+                <strong>Coordinate Examples:</strong>
+                
+    <ul>
+    <li>270.92194 -24.38017 eq</li>
+    <li>18h 03m 41.27s -24d 22m 48.6s </li>
+    <li>5.97109 -1.17751 </li>
+    <li>M 8</li>
+    </ul>
+
+            </div>
+            <div class="ds_form_ex">
+                <strong>Default:</strong> Equatorial J2000
+                <a href="/applications/Cutouts/docs/coordinate.html#coords" target="help">
+                    <img src="/images/icons/help.gif" border="0" alt="Coordinate Help" />
+                </a>
+            </div>
+            <div class="ds_form_info">
+                NOTE: For single cutouts of DSS data larger than
+                1600 arcsec, you can use
+                <a href="/data/DSS">Atlas</a>, where the search size acts
+                as your cutout size, up to 6.5 degrees.
+            </div>
+        </td>
+        </tr>
+
+        <!-- Table upload -->
+        <tr>
+        <th>
+            <input type="radio" name="outtype" value="table" />
+            Multiple Positions<br />
+            <span class="ds_note">(User Table Upload)</span>
+        </th>
+        <td>
+            <div class="ds_form_info">
+                <strong>Table Upload Instructions:</strong> The input table should
+                contain a list of coordinates or astronomical object names; a 
+                (cutout) size column is optional.  Please
+                see <a href="/applications/Cutouts/docs/instructions.html#upload" target="help">
+                allowed table format</a> information.  
+                A cutout size may be specified in a column in the input table,
+                allowing for a different cutout size per position. Or, to have the same
+                size cutouts for all input positions, specify one value in the
+                <strong>Uniform Cutout size</strong> field below. 
+                <a href="/applications/Cutouts/docs/sample_coords_size.tbl">Example table</a>.
+            </div>
+            <table class="inputs">
+            <tr>
+                <th>Table 
+                    <a href="/applications/Cutouts/docs/instructions.html#upload" target="help">
+                        <img src="/images/icons/help.gif" border="0" alt="Table Format Help" /></a>:
+                </th>
+                <td>
+                    <input type="file" name="upload" onclick="javascript:setCutoutsRadio('table');"
+                           value="" size="35" maxlength="100" />
+                </td>
+            </tr>
+            </table>
+            <table class="inputs">
+            <tr>
+                <th>
+                    Uniform Cutout size (arcsec)
+                    <span class="ds_range">
+                        [range: 1-1600 arcsec]:
+                    </span>
+                </th>
+                <td>
+                    <input type="text" name="tbl_sizeX" size="10" value="240" maxlength="100" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Or, specify a non-uniform cutout size here for each 
+                   position in the table using a cutout size column name:</td>
+            </tr>
+
+            <tr>
+                <th>Cutout size column name:</th>
+                <td><input type="text" name="col_sizeX" size="10" maxlength="100" /></td>
+            </tr>
+
+            </table>
+        </td>
+        </tr>
+    </table>
+
+    <!-- Form submission -->
+    <table class="submit"><tr>
+        <td><input type="submit" value="Submit" /></td>
+        <td><input type="reset" value="Reset" /></td>
+    </tr></table>
+
+    </div> <!-- end of div #ds_form -->
+
+
+
+
+<!-- Table of data set selections -->
+
+
+<p align="center"><a href="javascript:checkAllCutouts(1)">Select All Data Sets</a> | <a href="javascript:checkAllCutouts(0)">De-select All Data Sets</a></p>
+    <table id="ds_sel">
+    <tr>
+        <th>Select</th>
+        <th>DSS Data Set</th>
+    </tr>
+
+
+
+    <tr>
+        <td class="ds_check">
+            <input type="checkbox" name="cutouttbl1" value="images_red" checked="checked" />
+        </td>
+        <td>
+            <a href="/data/DSS" target="help">DSS red images</a>
+            <span class="ds_desc"> </span>
+        </td>
+    </tr>
+
+
+
+    <tr>
+        <td class="ds_check">
+            <input type="checkbox" name="cutouttbl2" value="images_blue" checked="checked" />
+        </td>
+        <td>
+            <a href="/data/DSS" target="help">DSS blue images</a>
+            <span class="ds_desc"> </span>
+        </td>
+    </tr>
+
+
+
+    <tr>
+        <td class="ds_check">
+            <input type="checkbox" name="cutouttbl3" value="images_ir" checked="checked" />
+        </td>
+        <td>
+            <a href="/data/DSS" target="help">DSS IR images</a>
+            <span class="ds_desc"> </span>
+        </td>
+    </tr>
+
+
+    </table> <!-- end of #ds_sel -->
+
+    <input type="hidden" name="ntable_cutouts" value="3" />
+
+
+
+
+
+</div>
+
+
+</div> <!-- end of div #ds -->
+</form>
+
+
+</div> <!-- end #content -->
+<div id="irsa-footer" style="position:absolute;left:0;right:0;margin-top:20px">
+<iframe src="/frontpage/footer.html" width="100%" frameborder=0 scrolling=0 seamless=1/>
+</div>  <!-- end #irsa-footer -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

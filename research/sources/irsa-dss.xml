@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<result status="ok">
+  <description>
+     <collection>DSS</collection>
+     <ra>129.500000</ra>
+     <dec>72.665000</dec>
+     <regSize>0.250000</regSize>
+     <radius>0.100000</radius>
+     <radunits>degrees</radunits>
+  </description>
+  <coverageMap>
+    <resultHtml>
+       https://irsa.ipac.caltech.edu:443/workspace/TMP_9pemap_1734215/Atlas/129.5_72.665_eq_1734215.v0001/index.html
+    </resultHtml>
+    <resultMap>
+       https://irsa.ipac.caltech.edu:443/workspace/TMP_9pemap_1734215/Atlas/129.5_72.665_eq_1734215.v0001/region.jpg
+    </resultMap>
+    <resultFits>
+       https://irsa.ipac.caltech.edu:443/workspace/TMP_9pemap_1734215/Atlas/129.5_72.665_eq_1734215.v0001/background_IRAS_ISSA_12micron.fits
+    </resultFits>
+  </coverageMap>
+  <summary>
+     <counts>
+        <imagesN> 12 </imagesN>
+        <sourcesN> 0 </sourcesN>
+        <spectraN> 0 </spectraN>
+     </counts>
+     <downloadScript>
+        https://irsa.ipac.caltech.edu:443/workspace/TMP_9pemap_1734215/Atlas/129.5_72.665_eq_1734215.v0001/wget_data.bat
+     </downloadScript>
+  </summary>
+  <images>
+      <counts>12</counts>
+     <metadata>
+        https://irsa.ipac.caltech.edu:443/workspace/TMP_9pemap_1734215/Atlas/129.5_72.665_eq_1734215.v0001/images.tbl
+     </metadata>
+     <metadataVOtable>
+        https://irsa.ipac.caltech.edu:443/workspace/TMP_9pemap_1734215/Atlas/129.5_72.665_eq_1734215.v0001/images.xml
+     </metadataVOtable>
+  </images>
+</result>
+

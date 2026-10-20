@@ -1,0 +1,56 @@
+{
+  "schema": "discover/v0",
+  "title": "Asteroid Precovery: Reproducible Archive Evidence",
+  "summary": "Local pilot reproducing two documented 1955 precovery exposures of 1999 AN10 with uncertainty, negative controls and a reviewable evidence package.",
+  "domains": [
+    "astronomy",
+    "planetary-science",
+    "astrometry"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "UNASSIGNED (vacant role; no consenting maintainer)"
+    }
+  ],
+  "canonical_repo": "file:///Users/colkitt/discover-work/incubatedPilots/asteroid-precovery/start-asteroid-precovery",
+  "entry": {
+    "agents": "AGENTS.md",
+    "project": "DISCOVERY.md",
+    "contributing": "CONTRIBUTING.md",
+    "brief": "research/BRIEF.md"
+  },
+  "frontier": "discover/frontier.json",
+  "catalog": "discover/catalog.json",
+  "priority_log": "discover/priority-log.md",
+  "ledger": "review/record.json",
+  "verification_profile": "observational",
+  "permissions": {
+    "post_messages": false,
+    "open_prs": false,
+    "maintainer_only": [
+      "accept-scientific-results",
+      "change-frontier",
+      "submit-astrometry",
+      "publish"
+    ]
+  },
+  "credit": {
+    "policy": "CONTRIBUTING.md; credit original observations, archives and catalogues. Contributors and reviewers are named only with consent.",
+    "kinds": [
+      "contributors-file",
+      "acknowledgement",
+      "citation"
+    ]
+  },
+  "process_changed_on": "2026-10-20",
+  "requirements": {
+    "ram_gb": 2,
+    "disk_gb": 1,
+    "note": "Python 3.14 tested; no GPU; pinned wheels; offline astronomical verification after installation."
+  },
+  "review": {
+    "paused": true,
+    "note": "LOCAL proposal. No maintainer has consented and weekly capacity is unassigned. Placeholder maintainer entry is a vacant role required by v0 schema, not a person."
+  }
+}

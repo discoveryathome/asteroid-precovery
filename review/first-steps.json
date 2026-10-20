@@ -1,0 +1,58 @@
+[
+  {
+    "card": "archive-overlap-audit",
+    "command": [
+      "env",
+      "PYTHONPATH=src",
+      ".venv/bin/python",
+      "-m",
+      "precovery.tasks",
+      "archive"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"coverage_rows\": 12,\n  \"documented_plate_matches\": [\n    \"images/dss1red/dss1red_XE036.fits\",\n    \"images/dss1blue/dss1blue_XO036.fits\"\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "card": "plate-time-and-calibration",
+    "command": [
+      "env",
+      "PYTHONPATH=src",
+      ".venv/bin/python",
+      "-m",
+      "precovery.tasks",
+      "astrometry"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"XE036\": {\n    \"inliers\": 47,\n    \"loo_rms_per_axis_arcsec\": 0.09710133936825478\n  },\n  \"XO036\": {\n    \"inliers\": 47,\n    \"loo_rms_per_axis_arcsec\": 0.14129434301017774\n  }\n}\nInspect data/controls.json time_override and data/derived/reference-comparison.json\n",
+    "stderr": ""
+  },
+  {
+    "card": "correlated-noise-and-trails",
+    "command": [
+      "env",
+      "PYTHONPATH=src",
+      ".venv/bin/python",
+      "-m",
+      "precovery.tasks",
+      "pipeline"
+    ],
+    "returncode": 0,
+    "stdout": "PASS: immutable inputs, published endpoint transcription, image IDs and time overrides verified\n",
+    "stderr": ""
+  },
+  {
+    "card": "independent-evidence-review",
+    "command": [
+      "env",
+      "PYTHONPATH=src",
+      ".venv/bin/python",
+      "-m",
+      "precovery.tasks",
+      "review"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"status\": \"pending-independent-scientific-review\",\n  \"open_obligations\": 9,\n  \"reviewer\": null\n}\n",
+    "stderr": ""
+  }
+]

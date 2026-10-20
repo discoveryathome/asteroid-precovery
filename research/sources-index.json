@@ -1,0 +1,95 @@
+{
+  "retrieved_on": "2026-10-20",
+  "sources": [
+    {
+      "path": "research/sources/start.md",
+      "url": "https://discoveryathome.org/v0/start.md",
+      "sha256": "82ea68344c7a03dab33d76264b16dacdc483924a8d7770461ce0873b116b4849"
+    },
+    {
+      "path": "research/sources/spec-v0.md",
+      "url": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/v0.md",
+      "sha256": "ea00f614e18e6c08dc83675b118148fc2b485cc3d02030eb679d52fc83f2f49c"
+    },
+    {
+      "path": "research/sources/manifest.schema.json",
+      "url": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/schemas/manifest.schema.json",
+      "sha256": "6b4a2899489d17b9961533fc2eff5491ce547a5dbb15eeff8abd4664390ac007"
+    },
+    {
+      "path": "research/sources/frontier.schema.json",
+      "url": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/schemas/frontier.schema.json",
+      "sha256": "e67df68d1dfee778e058f9294886f57e5bc6bd21811eca80324eb738b2c4b63a"
+    },
+    {
+      "path": "research/sources/catalog.schema.json",
+      "url": "https://raw.githubusercontent.com/discoveryathome/discover/main/spec/schemas/catalog.schema.json",
+      "sha256": "6d1ab7b1a06f0aa065a1c64eed0943b47c8b98978b5781957fb777cea7273549"
+    },
+    {
+      "path": "research/sources/jpl-an10.html",
+      "url": "https://cneos.jpl.nasa.gov/news/news018a.html",
+      "sha256": "f9ba9222b4164677909e8a58884ee84495b9ccd081affdb65b9367b437220e16"
+    },
+    {
+      "path": "research/sources/jpl-reference.jpg",
+      "url": "https://cneos.jpl.nasa.gov/images/news/1999an10_s.jpg",
+      "sha256": "43e1c40089fb8985bfd2fef7556ec968ba5f0eaafd244ace1d4fe0c710df403c"
+    },
+    {
+      "path": "research/sources/mpec-1999-n21.html",
+      "url": "https://www.minorplanetcenter.net/iau/mpec/J99/J99N21.html",
+      "sha256": "792d33e1edcbd867ca06e4fcb2e849687fa450b15e32b50a6ef44c1548788818"
+    },
+    {
+      "path": "research/sources/irsa-images.tbl",
+      "url": "https://irsa.ipac.caltech.edu:443/workspace/TMP_9pemap_1734215/Atlas/129.5_72.665_eq_1734215.v0001/images.tbl",
+      "sha256": "22f3ae575b032a2d60363c09bbfeb4fe49ed43fdcc25c722230a8a44c0ff16f8"
+    },
+    {
+      "path": "research/sources/plate-help.html",
+      "url": "https://archive.stsci.edu/dss/plate_finder_help.html",
+      "sha256": "cd92155b39fe8a107ab2b26e901d62a50f69498fb821f243c381a751d621319e"
+    },
+    {
+      "path": "research/sources/dss-form.html",
+      "url": "https://archive.stsci.edu/cgi-bin/dss_form",
+      "sha256": "595a5a8d27d9ef0ba00e60fcd00eb9d9ce2e1378c6ba232aa9307a4fdd28ed12"
+    },
+    {
+      "path": "research/sources/irsa-cutout-form.html",
+      "url": "https://irsa.ipac.caltech.edu/data/DSS/index_cutouts.html",
+      "sha256": "e12f264c305727299f7c41d0a9004d49017349e4e8688aa3859782c3007d4712"
+    },
+    {
+      "path": "research/sources/eso-coverage.xml",
+      "url": "https://archive.eso.org/bin/dss_sia/dss.sia?POS=129.6,72.66&SIZE=0.15&FORMAT=image/fits",
+      "sha256": "fbecd90136f30cece66c0d7a050761e13edef9f3e8bc0d5bd6a7c5124100bb90"
+    },
+    {
+      "path": "research/sources/stscI-plate-extract-error.html",
+      "url": "https://archive.stsci.edu/cgi-bin/dss_plate_finder?ra=129.5&dec=72.665&height=12&width=12&format=FITS&plate_id=07ID&action=Extract",
+      "sha256": "cd8ea10472c02caf7e4cd8d47228fcf31f5e3c8ef5091787c4f90c5dc71c8082"
+    },
+    {
+      "path": "research/sources/plate-search.html",
+      "url": "https://archive.stsci.edu/cgi-bin/dss_plate_finder?ra=129.6&dec=72.66&equinox=J2000&height=15&width=15&action=Find+plates",
+      "sha256": "919a5a626091a3222ee4083f1427d004e1ac72153a75a68eac6dc91b437e9fba"
+    },
+    {
+      "path": "research/sources/stscI-XE036-probe.fits",
+      "url": "https://archive.stsci.edu/cgi-bin/dss_search?v=poss1_red&r=135&d=72.66&e=J2000&h=1&w=1&f=fits&c=none",
+      "sha256": "f418da681b83b2b75e092e5b950938f8580dcc480d25ef067891d2a26ed692de"
+    },
+    {
+      "path": "research/sources/irsa-dss.xml",
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Atlas/nph-atlas?mission=DSS&locstr=129.5+72.665+eq&regSize=0.2&covers=on&mode=PI",
+      "sha256": "2c1afe20caea4851228177754eb3bcd198b859807d6189cfcc653b694fabe53e"
+    },
+    {
+      "path": "research/sources/irsa-cutouts.xml",
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Cutouts/nph-cutouts?mission=DSS&min_size=1&max_size=3600&units=arcsec&locstr=129.5+72.665+eq&sizeX=600&ntable_cutouts=2&cutouttbl1=images_red&cutouttbl2=images_blue&mode=PI",
+      "sha256": "cfaaf9e58c922225d0da7bdf941645df0087e2e5177fd5412d93253811fdc0a4"
+    }
+  ]
+}

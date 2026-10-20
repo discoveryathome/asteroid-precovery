@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator"
+        content=
+        "HTML Tidy for Solaris (vers 1 September 2005), see www.w3.org" />
+
+  <title>MOST - Moving Object Search Tool Instructions</title>
+  
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/print_style.css" />
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/ui.css" />
+<script type="text/javascript" src="/ui_verbose.js"></script>
+
+<!--[if lt IE 7]>
+<style type="text/css" media="screen, projection">
+#irsa-menu li
+{
+float: left;
+height: 1%;
+}
+#irsa-menu a
+{
+height: 1%;
+}
+</style>
+<![endif]-->
+</head>
+<body >
+
+<div id="irsa-banner"   style= "min-width:768px; min-height:95px"></div>
+<script type="text/javascript" language='javascript' src='/frontpage/frontpage.nocache.js'> </script>
+
+<div id="content">
+<!--   #include virtual="/include/sysnotice.html"  -->
+
+
+  <hr width="0%" />
+
+  <p></p>
+
+  <center>
+    <h2>MOST - Moving Object Search Tool Instructions</h2>
+  </center>
+
+  <p></p>
+
+  <p></p>
+
+<!--
+  <div align="center">
+    [ <a href="#Overview"><b>Overview</b></a> | 
+    <a href="#how_to"><b>How to use this service</b></a> | 
+    <a href="#output"><b>MOST Output</b></a> | 
+  </div>
+
+  <p><a name="Overview"
+     id="Overview"></a></p>
+-->
+
+<p>
+The Moving Object Search Tool (MOST) computes the orbit of a solar
+system object and searches for images that covered the object's
+predicted positions in select image archives housed by IRSA.  Aids to
+visualization include an orbit plot and links to display the FITS images.
+It can serve as a "precovery" tool,
+determining whether newly discovered objects were previously observed.
+</p>
+
+  <p>
+    Also available is a 
+    <a href="/applications/MOST/MOSTProgramInterface.html">
+    Program Interface</a> to MOST.
+  </p>
+
+<p>Note: A Python notebook showing how to interact with some of the MOST capabilities is available: <a href="https://caltech-ipac.github.io/irsa-tutorials/most-queries" target="_blank">Python notebook</a>.
+</p>
+
+<h4>Image Datasets and Search Parameters</h4>
+
+<p> MOST can query all phases of the WISE/NEOWISE
+mission (select "wise_merge" under <b>Image Dataset</b> for all),
+Spitzer, PTF, ZTF, SOFIA, SPHEREx, and 2MASS. If the <b>Observation</b> time ranges
+are left blank, it will use the entire length of the mission.  This
+could be a lengthy search, so <b>limiting the time range is usually
+necessary</b>.  This is especially important for WISE/NEOWISE
+(i.e. wise_merge to MOST) near the ecliptic poles where the coverage
+can be very high.  When a dataset is selected, an info box will give
+information on the time range of the data.
+</p>
+
+<!--
+<p>
+Datasets marked "Internal use only" are proprietary and choosing one
+will give an "Internal Service Error" to non-enabled servers.
+</p>
+-->
+
+<p>
+For <b>Output Mode</b>, the "Regular" option is recommended.  The full
+option displays the full ephemeris and other products and requires some
+scrolling.
+</p>
+
+<h4>Object Input</h4>
+
+<p>
+Solar system objects can be input by name, number, designation, or
+NAIF ID number.  Name resolution and ephemeris generation for known
+objects is done via query to JPL's Horizon database.</p>
+
+<p>
+There can be name ambiguities. For example, entering "WISE" is a
+problem as there were many asteroids and comets discovered by the WISE
+mission. Entering "Neptune" is unclear as there are ephemeris files
+for both Neptune and the Neptune system barycenter. MOST will deliver
+a messsage if there is an ambiguity. The message may contain suggested
+NAIF ID's, e.g. "1003094:NID" for comet 317P/WISE or "899:NID" for
+Neptune. NAIF ID's may be input directly as well.  In a few cases,
+there are satellites and asteroids with the same name, and you may
+distinguish them by, e.g. "Europa:SAT" and "Europa:AST".
+</p>
+
+  <center>
+    <table width=600 border=1>
+      <tr align="left">
+        <td>
+          <p><b>EXAMPLES OF OBJECT INPUT:</b><br /><br />
+          Asteroid 324 Bamberga: &nbsp; "Bamberga" or "324"<br />
+          Periodic comet P/29 Schwassmann-Wachmann 1: &nbsp; "29P" or "P/29" (but not P29)<br />
+          Non-periodic comet 337P/WISE: &nbsp; "C/20010 N1"<br /> 
+          Titan: &nbsp; "Titan"<br />
+          Neptune: &nbsp; "899:NID"</p>
+        </td>
+      </tr>
+    </table>
+  </center>
+
+<p>
+The ephemeris can also be calculated for comets or asteroids using
+orbital elements supplied by the user, either individually or in the
+Minor Planet Center (MPC) one-line format
+(<a href="/applications/Gator/GatorAid/irsa/moving.html"
+target="_blank">further information</a>).  But object name/number
+input is best, as it will query JPL Horizons to get the osculating
+orbital elements closest in time to the observations.
+</p>
+
+<h4>Additional Data Requests</h4>
+
+<p> Clicking on <b>Create Fits and DS9 Region Files Tarballs</b> will
+pack the retrieved images and markers for the moving object (in DS9
+region format) into separate tarballs.  The image tarball could be
+quite large for a large search, so leave this option off and see how
+many images there will be first.  
+<!-- Clicking on <b>Create Cutout Images
+Page w/ Target</b> will make postcards of the matched images.
+-->
+</p>
+
+<h4>Output</h4>
+
+<p>
+MOST streams results to the browser as it goes, so don't exit the
+output page until it completes.
+</p>
+
+<p> The Regular output displays a plot of the orbital path, and a
+table ("Images with a Matched Object Position") with the matched
+images along with object parameters at the time.  The table that is
+displayed has links to download the images individually or display
+them in the IRSA Viewer.  However if the data have access
+restrictions, e.g. ZTF, this will only work for authorized users who
+have logged into the browser session.  The display table columns are
+described below. </p>
+
+<p> <b>Column Key for Final Table</b> </p>
+
+<table width=800 border=1 align="center">
+  <tr>
+    <th> Column </th>
+    <th> Description </th>
+  </tr>
+  <tr>
+    <td> <b>Download/View</b> </th>
+    <td> Links to download or view the data. </th>
+  </tr>
+  <tr>
+    <td> <b>DS9 File</b> </th>
+    <td> Markers for the moving object in DS9 "region" format. </th>
+  </tr>
+  <tr>
+    <td> <b>Image ID</b> </th>
+    <td> A unique identifier for the image data, not necessarily the image file name.</th>
+  </tr>
+  <tr>
+    <td> <b>date_obs</b> </th>
+    <td> Date (UTC) of the observation.  </th>
+  </tr>
+  <tr>
+    <td> <b>time_obs</b> </th>
+    <td> Time (UTC) of the midpoint of the observation. </th>
+  </tr>
+  <tr>
+    <td> <b>mjd_obs</b> </th>
+    <td> Modified Julian Date (days) of the midpoint of the observation. </th>
+  </tr>
+  <tr>
+    <td> <b>ra_obs</b> </th>
+    <td> Ephemeris prediction of the object's right ascension (deg, J2000). </th>
+  </tr>
+  <tr>
+    <td> <b>dec_obs</b> </th>
+    <td> Ephemeris prediction of the object's declination (deg, J2000). </th>
+  </tr>
+  <tr>
+    <td> <b>r</b> </th>
+    <td> Heliocentric distance of the object (AU). </th>
+  </tr>
+  <tr>
+    <td> <b>&Delta;</b> </th>
+    <td> Geocentric distance of the object (AU). </th>
+  </tr>
+  <tr>
+    <td> <b>dist_ctr</b> </th>
+    <td> Projected distance of the object from the center of the image (deg). </th>
+  </tr>
+  <tr>
+    <td> <b>phase</b> </th>
+    <td> Sun-Object-earth angle (deg). </th>
+  </tr>
+  <tr>
+    <td> <b>vmag</b> </th>
+    <td> Estimate of visual magnitude (from Horizons). </th>
+  </tr>
+</table>
+
+<p> An intermediate table, available in the Full output or via a link
+called Image Metadata with a Matched Object Position, has the same
+information as the final table and additional metadata from the
+dataset.  The keywords are described in the table
+below and further information for some can be found in these links: <a
+href="http://wise2.ipac.caltech.edu/docs/release/allsky/expsup/sec2_4i.html"
+target="_blank">WISE/NEOWISE</a>, <a
+href="https://www.ipac.caltech.edu/2mass/releases/allsky/doc/sec2_4a.html"
+target="_blank">2MASS</a>, <a
+href="https://irsa.ipac.caltech.edu/onlinehelp/ptf/#id=overview"
+target="_blank">PTF</a>, <a
+href="https://irsa.ipac.caltech.edu/onlinehelp/ztf/#id=overview"
+target="_blank">ZTF</a>, and <a
+href="https://sha.ipac.caltech.edu/applications/Spitzer/SHA/help/doc/api.html"
+target="_blank">Spitzer</a>.
+</p>
+
+<p> <b>Additional Columns in "Image Metadata with a Matched Object Position" Table</b> </p>
+
+<table width=800 border=1 align="center">
+  <tr>
+    <th> Column </th>
+    <th> Description </th>
+  </tr>
+  <tr>
+    <td colspan=2 align=center> <b>General</b> </th>
+  </tr>
+  <tr>
+    <td> <b>ra1, dec1, ra2, dec2 etc.</b> </th>
+    <td> Right ascension and declination of the 4 corners of the image (deg, J2000)</th>
+  </tr>
+  <tr>
+    <td> <b>match</b> </th>
+    <td> match = 1 indicates a matched image (added by MOST) </th>
+  </tr>
+  <tr>
+    <td colspan=2 align=center> <b>WISE/NEOWISE</b> </th>
+  </tr>
+  <tr>
+    <td> <b>crpix1, crpix2</b> </th>
+    <td> Center of image (pixels)</th>
+  </tr>
+  </tr>
+  <tr>
+    <td> <b>crval1, crval2</b> </th>
+    <td> Center of image (deg, J2000)</th>
+  </tr>
+  <tr>
+    <td> <b>equinox</b> </th>
+    <td> Equinox of coordinates </th>
+  </tr>
+  <tr>
+    <td> <b>band</b> </th>
+    <td> WISE band number; 1 (3.4 microns), 2 (4.6 microns), 3 (12 microns), 4 (22 microns)</th>
+  </tr>
+  <tr>
+    <td> <b>scan_id</b> </th>
+    <td> Identification of pole-to-pole orbit scan </th>
+  </tr>
+  <tr>
+    <td> <b>date_obs</b> </th>
+    <td> Date and time of mid-point of frame observation, UTC </th>
+  </tr>
+  <tr>
+    <td> <b>mjd_obs</b> </th>
+    <td> Modified Julian Date of mid-point of frame observation, UTC</th>
+  </tr>
+  <tr>
+    <td> <b>dtanneal</b> </th>
+    <td> Elapsed time in seconds since the last anneal </th>
+  </tr>
+  <tr>
+    <td> <b>moon_sep</b> </th>
+    <td> The angular distance from the frame center to the Moon (deg)</th>
+  </tr>
+  <tr>
+    <td> <b>saa_sep</b> </th>
+    <td> The angular distance from the frame center to South Atlantic Anomaly (SAA) boundary (deg) </th>
+  </tr>
+  <tr>
+    <td> <b>qual_frame</b> </th>
+    <td> This integer indicates the quality score value for the Single-exposure image frameset, with values of 0 (poor quality), 5, or 10 (high quality) </th>
+  </tr>
+  <tr>
+    <td> <b>image_set</b> </th>
+    <td> image_set = 4 for 4band, 3 for 3band, 2 for 2band, and 6, 7 etc. for NEOWISE-R year 1, 2 etc. </th>
+  </tr>
+  <tr>
+    <td colspan=2 align=center> <b>2MASS</b> </th>
+  </tr>
+  <tr>
+    <td> <b>ordate</b> </th>
+    <td> UT date of reference (start of operations for the night) </th>
+  </tr>
+  <tr>
+    <td> <b>hemisphere</b> </th>
+    <td> N or S hemisphere </th>
+  </tr>
+  <tr>
+    <td> <b>scanno</b> </th>
+    <td> Nightly scan number </th>
+  </tr>
+  <tr>
+    <td> <b>fname</b> </th>
+    <td> FITS file name </th>
+  </tr>
+  <tr>
+    <td> <b>ut_date</b> </th>
+    <td> UT date of scan (YYMMDD) </th>
+  </tr>
+  <tr>
+    <td> <b>ut</b> </th>
+    <td> UT time of scan (HH:MM:SS.SSS) </th>
+  </tr>
+  <tr>
+    <td> <b>telname</b> </th>
+    <td> Telescope location - Hopkins or CTIO </th>
+  </tr>
+  <tr>
+    <td> <b>mjd</b> </th>
+    <td> Modified Julian Date of observation </th>
+  </tr>
+  <tr>
+    <td> <b>ds</b> </th>
+    <td> ds = full for 2mass </th>
+  </tr>
+  <tr>
+    <td colspan=2 align=center> <b>PTF</b> </th>
+  </tr>
+  <tr>
+    <td> <b>obsdate</b> </th>
+    <td> Observation UT date/time YYYY-MM-DD HH:MM:SS.SSS </th>
+  </tr>
+  <tr>
+    <td> <b>obsmjd</b> </th>
+    <td> Modified Julian Date of observation </th>
+  </tr>
+  <tr>
+    <td> <b>nid</b> </th>
+    <td> Night database ID </th>
+  </tr>
+  <tr>
+    <td> <b>expid</b> </th>
+    <td> Exposure database ID </th>
+  </tr>
+  <tr>
+    <td> <b>ccdid</b> </th>
+    <td> CCD number (0...11)  </th>
+  </tr>
+  <tr>
+    <td> <b>rfilename</b> </th>
+    <td> Raw-image filename </th>
+  </tr>
+  <tr>
+    <td> <b>pfilename</b> </th>
+    <td> Processed-image filename </th>
+  </tr>
+  <tr>
+    <td colspan=2 align=center> <b>ZTF</b> </th>
+  </tr>
+  <tr>
+    <td> <b>obsdate</b> </th>
+    <td> Observation UT date/time YYYY-MM-DD HH:MM:SS.SS </th>
+  </tr>
+  <tr>
+    <td> <b>obsjd</b> </th>
+    <td> Julian Date of observation (days)</th>
+  </tr>
+  <tr>
+    <td> <b>filefracday</b> </th>
+    <td> Observation date with fractional day YYYYMMDDdddddd </th>
+  </tr>
+  <tr>
+    <td> <b>field</b> </th>
+    <td> ZTF field number </th>
+  </tr>
+  <tr>
+    <td> <b>ccdid</b> </th>
+    <td> CCD number (1...16)  </th>
+  </tr>
+  <tr>
+    <td> <b>qid</b> </th>
+    <td> Detector quadrant ID (1...4) </th>
+  </tr>
+  <tr>
+    <td> <b>rcid</b> </th>
+    <td> Readout channel ID (0...63) </th>
+  </tr>
+  <tr>
+    <td> <b>fid</b> </th>
+    <td> Filter ID </th>
+  </tr>
+  <tr>
+    <td> <b>filtercode</b> </th>
+    <td> Filter name (abbreviated) </th>
+  </tr>
+  <tr>
+    <td> <b>pid</b> </th>
+    <td> Science product ID </th>
+  </tr>
+  <tr>
+    <td> <b>nid</b> </th>
+    <td> Night ID </th>
+  </tr>
+  <tr>
+    <td> <b>expid</b> </th>
+    <td> Exposure ID </th>
+  </tr>
+  <tr>
+    <td> <b>itid</b> </th>
+    <td> Image type ID </th>
+  </tr>
+  <tr>
+    <td> <b>imgtypecode</b> </th>
+    <td> Single letter image type code</th>
+  </tr>
+  <tr>
+    <td colspan=2 align=center> <b>Spitzer</b> </th>
+  </tr>
+  <tr>
+    <td> <b>reqkey</b> </th>
+    <td> Spitzer Astronomical Observation Request number </th>
+  </tr>
+  <tr>
+    <td> <b>bcdid</b> </th>
+    <td> Post Basic Calibrated Data ID (Level 2 product search) </th>
+  </tr>
+  <tr>
+    <td> <b>reqmode</b> </th>
+    <td> Spitzer Astronomical Observation Request type </th>
+  </tr>
+  <tr>
+    <td> <b>wavelength</b> </th>
+    <td> Bandpass ID </th>
+  </tr>
+  <tr>
+    <td> <b>minwavelength</b> </th>
+    <td> Min wavelength (microns) </th>
+  </tr>
+  <tr>
+    <td> <b>maxwavelength</b> </th>
+    <td> Max wavelength (microns) </th>
+  </tr>
+  <tr>
+    <td> <b>time</b> </th>
+    <td> UT time of observation </th>
+  </tr>
+  <tr>
+    <td> <b>exposuretime</b> </th>
+    <td> Exposure time (sec) </th>
+  </tr>
+  <tr>
+    <td colspan=2 align=center> <b>SOFIA</b> </th>
+  </tr>
+  <tr>
+    <td> <b>proposal_id</b> </th>
+    <td> SOFIA proposal identifier </th>
+  </tr>
+  <tr>
+    <td> <b>observationid</b> </th>
+    <td> Unique string for the observation </th>
+  </tr>
+  <tr>
+    <td> <b>productid</b> </th>
+    <td> File name </th>
+  </tr>
+  <tr>
+    <td> <b>planeid</b> </th>
+    <td> (internal use only)</th>
+  </tr>
+  <tr>
+    <td> <b>target_name</b> </th>
+    <td> Target name</th>
+  </tr>
+  <tr>
+    <td> <b>target_moving</b> </th>
+    <td> Positive if moving target</th>
+  </tr>
+  <tr>
+    <td> <b>instrument</b> </th>
+    <td> SOFIA instrument</th>
+  </tr>
+  <tr>
+    <td> <b>ra</b> </th>
+    <td> Right ascension (J2000) of the observation in deg</th>
+  </tr>
+  <tr>
+    <td> <b>dec</b> </th>
+    <td> Declination (J2000) of the observation in deg</th>
+  </tr>
+  <tr>
+    <td> <b>start_date</b> </th>
+    <td> Date and time of start of observation, UTC </th>
+  </tr>
+  <tr>
+    <td> <b>end_date</b> </th>
+    <td> Date and time of end of observation, UTC </th>
+  </tr>
+  <tr>
+    <td> <b>mjd_start</b> </th>
+    <td> Modified Julian Date of start of observation</th>
+  </tr>
+  <tr>
+    <td> <b>mjd_end</b> </th>
+    <td> Modified Julian Date of end of observation</th>
+  </tr>
+  <tr>
+    <td> <b>exposure_time</b> </th>
+    <td> Exposure time in sec</th>
+  </tr>
+  <tr>
+    <td> <b>uri</b> </th>
+    <td> Path to file</th>
+  </tr>
+  <tr>
+    <td colspan=2 align=center> <b>SPHEREx</b> </th>
+  </tr>
+  <tr>
+    <td> <b>proposal_id</b> </th>
+    <td> (currently null) </th>
+  </tr>
+  <tr>
+    <td> <b>observationid</b> </th>
+    <td> Unique string for the observation </th>
+  </tr>
+  <tr>
+    <td> <b>productid</b> </th>
+    <td> File name </th>
+  </tr>
+  <tr>
+    <td> <b>planeid</b> </th>
+    <td> (internal use only)</th>
+  </tr>
+  <tr>
+    <td> <b>target_name</b> </th>
+    <td> Target name</th>
+  </tr>
+  <tr>
+    <td> <b>target_moving</b> </th>
+    <td> Positive if moving target</th>
+  </tr>
+  <tr>
+    <td> <b>instrument</b> </th>
+    <td> SPHEREx detector</th>
+  </tr>
+  <tr>
+    <td> <b>ra</b> </th>
+    <td> Right ascension (J2000) of the observation in deg</th>
+  </tr>
+  <tr>
+    <td> <b>dec</b> </th>
+    <td> Declination (J2000) of the observation in deg</th>
+  </tr>
+  <tr>
+    <td> <b>start_date</b> </th>
+    <td> Date and time of start of observation, UTC </th>
+  </tr>
+  <tr>
+    <td> <b>end_date</b> </th>
+    <td> Date and time of end of observation, UTC </th>
+  </tr>
+  <tr>
+    <td> <b>mjd_start</b> </th>
+    <td> Modified Julian Date of start of observation</th>
+  </tr>
+  <tr>
+    <td> <b>mjd_end</b> </th>
+    <td> Modified Julian Date of end of observation</th>
+  </tr>
+  <tr>
+    <td> <b>exposure_time</b> </th>
+    <td> Exposure time in sec</th>
+  </tr>
+  <tr>
+    <td> <b>uri</b> </th>
+    <td> Path to file</th>
+  </tr>
+
+</table>
+
+
+<br />
+Back to <a href="/applications/MOST">Main Page</a>.
+<br />
+
+
+</div> <!-- end #content -->
+<div id="irsa-footer" style="position:absolute;left:0;right:0;margin-top:20px">
+<iframe src="/frontpage/footer.html" width="100%" frameborder=0 scrolling=0 seamless=1/>
+</div>  <!-- end #irsa-footer -->
+
+</body>
+</html>
+

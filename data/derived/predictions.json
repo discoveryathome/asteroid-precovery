@@ -1,0 +1,146 @@
+[
+  {
+    "ra_deg": 129.607334577,
+    "dec_deg": 72.663149489,
+    "smaa_3sigma_arcsec": 3.011,
+    "smia_3sigma_arcsec": 0.287,
+    "theta_deg": -15.534,
+    "covariance_east_north_arcsec2": [
+      [
+        0.9357539792384628,
+        -0.2575616836235439
+      ],
+      [
+        -0.2575616836235439,
+        0.08074490965042623
+      ]
+    ],
+    "time": "1955-01-26T09:39:00",
+    "timescale": "UT1",
+    "frame": "ICRF astrometric topocentric",
+    "orbit": "JPL#100",
+    "center": "675",
+    "interpolation": "linear at 1-minute spacing",
+    "control": "an10-red-1955"
+  },
+  {
+    "ra_deg": 129.49900517650002,
+    "dec_deg": 72.665709378,
+    "smaa_3sigma_arcsec": 3.01,
+    "smia_3sigma_arcsec": 0.287,
+    "theta_deg": -15.425500000000001,
+    "covariance_east_north_arcsec2": [
+      [
+        0.936104721277164,
+        -0.2557691907377434
+      ],
+      [
+        -0.2557691907377434,
+        0.07972516761172475
+      ]
+    ],
+    "time": "1955-01-26T10:01:30",
+    "timescale": "UT1",
+    "frame": "ICRF astrometric topocentric",
+    "orbit": "JPL#100",
+    "center": "675",
+    "interpolation": "linear at 1-minute spacing",
+    "control": "an10-red-1955"
+  },
+  {
+    "ra_deg": 129.390611616,
+    "dec_deg": 72.668136294,
+    "smaa_3sigma_arcsec": 3.01,
+    "smia_3sigma_arcsec": 0.287,
+    "theta_deg": -15.317,
+    "covariance_east_north_arcsec2": [
+      [
+        0.9370703391074218,
+        -0.2541456494736011
+      ],
+      [
+        -0.2541456494736011,
+        0.07875954978146697
+      ]
+    ],
+    "time": "1955-01-26T10:24:00",
+    "timescale": "UT1",
+    "frame": "ICRF astrometric topocentric",
+    "orbit": "JPL#100",
+    "center": "675",
+    "interpolation": "linear at 1-minute spacing",
+    "control": "an10-red-1955"
+  },
+  {
+    "ra_deg": 129.361699283,
+    "dec_deg": 72.668761514,
+    "smaa_3sigma_arcsec": 3.01,
+    "smia_3sigma_arcsec": 0.287,
+    "theta_deg": -15.288,
+    "covariance_east_north_arcsec2": [
+      [
+        0.9373273885237042,
+        -0.25371108920299623
+      ],
+      [
+        -0.25371108920299623,
+        0.07850250036518434
+      ]
+    ],
+    "time": "1955-01-26T10:30:00",
+    "timescale": "UT1",
+    "frame": "ICRF astrometric topocentric",
+    "orbit": "JPL#100",
+    "center": "675",
+    "interpolation": "linear at 1-minute spacing",
+    "control": "an10-blue-1955"
+  },
+  {
+    "ra_deg": 129.332784794,
+    "dec_deg": 72.669377656,
+    "smaa_3sigma_arcsec": 3.01,
+    "smia_3sigma_arcsec": 0.287,
+    "theta_deg": -15.259,
+    "covariance_east_north_arcsec2": [
+      [
+        0.9375839979069226,
+        -0.2532762689462882
+      ],
+      [
+        -0.2532762689462882,
+        0.07824589098196624
+      ]
+    ],
+    "time": "1955-01-26T10:36:00",
+    "timescale": "UT1",
+    "frame": "ICRF astrometric topocentric",
+    "orbit": "JPL#100",
+    "center": "675",
+    "interpolation": "linear at 1-minute spacing",
+    "control": "an10-blue-1955"
+  },
+  {
+    "ra_deg": 129.303868628,
+    "dec_deg": 72.669984815,
+    "smaa_3sigma_arcsec": 3.01,
+    "smia_3sigma_arcsec": 0.287,
+    "theta_deg": -15.23,
+    "covariance_east_north_arcsec2": [
+      [
+        0.9378401669941199,
+        -0.2528411891490512
+      ],
+      [
+        -0.2528411891490512,
+        0.07798972189476877
+      ]
+    ],
+    "time": "1955-01-26T10:42:00",
+    "timescale": "UT1",
+    "frame": "ICRF astrometric topocentric",
+    "orbit": "JPL#100",
+    "center": "675",
+    "interpolation": "linear at 1-minute spacing",
+    "control": "an10-blue-1955"
+  }
+]

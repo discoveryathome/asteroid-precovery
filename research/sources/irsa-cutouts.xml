@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<result status="ok">
+  <description>
+     <collection>DSS</collection>
+     <ra>129.500000</ra>
+     <dec>72.665000</dec>
+     <regSize>0.166667</regSize>
+     <radunits>degrees</radunits>
+  </description>
+  <summary>
+     <resultHtml>
+       https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/index.html
+     </resultHtml>
+     <counts>
+        <cutoutsN> 10 </cutoutsN>
+        <skipN> 1 </skipN>
+     </counts>
+     <downloadScript>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/wget_fits_cutouts.bat </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/wget_jpg_cutouts.bat </jpg>
+     </downloadScript>
+  </summary>
+  <images>
+     <counts>10</counts>
+     <metadata>
+        https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/result.tbl
+     </metadata>
+     <metadataHTML>
+        https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/result.html
+     </metadataHTML>
+     <cutouts>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_red/0001_129.50000000_72.66500000_dss2red_XP036.fits
+ </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_red/0001_129.50000000_72.66500000_dss2red_XP036.jpg
+ </jpg>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_red/0001_129.50000000_72.66500000_dss2red_XP060.fits
+ </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_red/0001_129.50000000_72.66500000_dss2red_XP060.jpg
+ </jpg>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_red/0001_129.50000000_72.66500000_dss1red_XE036.fits
+ </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_red/0001_129.50000000_72.66500000_dss1red_XE036.jpg
+ </jpg>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_red/0001_129.50000000_72.66500000_dss1red_XE035.fits
+ </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_red/0001_129.50000000_72.66500000_dss1red_XE035.jpg
+ </jpg>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss1blue_XO036.fits
+ </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss1blue_XO036.jpg
+ </jpg>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss1blue_XO035.fits
+ </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss1blue_XO035.jpg
+ </jpg>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss2blue_N035.fits
+ </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss2blue_N035.jpg
+ </jpg>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss2blue_N036.fits
+ </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss2blue_N036.jpg
+ </jpg>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss2blue_XJ060.fits
+ </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss2blue_XJ060.jpg
+ </jpg>
+        <fits> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss2blue_XJ036.fits
+ </fits>
+        <jpg> https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_blue/0001_129.50000000_72.66500000_dss2blue_XJ036.jpg
+ </jpg>
+     </cutouts>
+  </images>
+</result>
+

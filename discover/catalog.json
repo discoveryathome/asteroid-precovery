@@ -1,0 +1,173 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 1,
+  "assessed_on": "2026-10-20",
+  "priority_log": "discover/priority-log.md",
+  "status": "LOCAL; paused pending consenting maintainer",
+  "tracks": [
+    {
+      "id": "archive-searches",
+      "weight": 30,
+      "useful_outcome": "Find a second independently documented public precovery case and identify all overlapping single exposures.",
+      "tasks": [
+        {
+          "id": "archive-overlap-audit",
+          "question": "Find a second independently documented public precovery case and identify all overlapping single exposures.",
+          "starting_points": [
+            "research/sources/irsa-images.tbl",
+            "research/BRIEF.md"
+          ],
+          "methods": [
+            "Use MOST or SSOIS for bounded moving-object searches; use IRSA Atlas for DSS.",
+            "Check exact image IDs, epochs, access rights and uncertainty-expanded motion coverage before downloading."
+          ],
+          "acceptance_gate": "A documented positive-control citation, exact exposure identity, immutable cutout and metadata with hashes; no new-claim acceptance from a footprint.",
+          "first_step": {
+            "command": [
+              "env",
+              "PYTHONPATH=src",
+              ".venv/bin/python",
+              "-m",
+              "precovery.tasks",
+              "archive"
+            ],
+            "expected": "12 coverage rows and two target plates are listed.",
+            "inspect": "research/sources/irsa-images.tbl",
+            "scope": "Run with PYTHONPATH=src from the project root; read-only baseline check."
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck",
+          "claim_kind": [
+            "observational",
+            "measured"
+          ],
+          "scope_change_triggers": [
+            "Any proposed new astrometric claim or external publication requires scientific review and authorization."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "astrometric-verification",
+      "weight": 30,
+      "useful_outcome": "Can the published time override and local astrometric uncertainties be independently justified?",
+      "tasks": [
+        {
+          "id": "plate-time-and-calibration",
+          "question": "Can the published time override and local astrometric uncertainties be independently justified?",
+          "starting_points": [
+            "data/controls.json",
+            "research/BRIEF.md"
+          ],
+          "methods": [
+            "Inspect published trail-end times and original plate logs.",
+            "Repeat calibration independently, propagate Gaia proper motions and combine timing/centroid/systematic uncertainties."
+          ],
+          "acceptance_gate": "Resolve the timestamp conflict with documentary evidence; independent measurements and stated uncertainty budget, without tuning time to residual.",
+          "first_step": {
+            "command": [
+              "env",
+              "PYTHONPATH=src",
+              ".venv/bin/python",
+              "-m",
+              "precovery.tasks",
+              "astrometry"
+            ],
+            "expected": "Both plates list 47 inliers and leave-one-out residuals.",
+            "inspect": "data/controls.json",
+            "scope": "Run with PYTHONPATH=src from the project root; read-only baseline check."
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck",
+          "claim_kind": [
+            "observational",
+            "measured"
+          ],
+          "scope_change_triggers": [
+            "Any proposed new astrometric claim or external publication requires scientific review and authorization."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "image-pipeline-improvements",
+      "weight": 20,
+      "useful_outcome": "How robust are trail measurements and rejection gates to correlated noise, blends and alternative morphologies?",
+      "tasks": [
+        {
+          "id": "correlated-noise-and-trails",
+          "question": "How robust are trail measurements and rejection gates to correlated noise, blends and alternative morphologies?",
+          "starting_points": [
+            "src/precovery/pipeline.py",
+            "research/BRIEF.md"
+          ],
+          "methods": [
+            "Preserve baseline and test injected displaced trails, stationary sources and localized defects.",
+            "Add empirical offset trials and correlated-noise models; report thresholds and selection effects."
+          ],
+          "acceptance_gate": "Both positives remain reproducible; planted errors and incorrect candidates fail; performance is measured on a separate labeled sample.",
+          "first_step": {
+            "command": [
+              "env",
+              "PYTHONPATH=src",
+              ".venv/bin/python",
+              "-m",
+              "precovery.tasks",
+              "pipeline"
+            ],
+            "expected": "Input hashes, control transcription, image identity and time checks pass.",
+            "inspect": "src/precovery/pipeline.py",
+            "scope": "Run with PYTHONPATH=src from the project root; read-only baseline check."
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck",
+          "claim_kind": [
+            "observational",
+            "measured"
+          ],
+          "scope_change_triggers": [
+            "Any proposed new astrometric claim or external publication requires scientific review and authorization."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expert-review",
+      "weight": 20,
+      "useful_outcome": "Can an independent astrometrist validate this evidence package and identify the remaining reporting obligations?",
+      "tasks": [
+        {
+          "id": "independent-evidence-review",
+          "question": "Can an independent astrometrist validate this evidence package and identify the remaining reporting obligations?",
+          "starting_points": [
+            "review/EVIDENCE.md",
+            "research/BRIEF.md"
+          ],
+          "methods": [
+            "Run the frozen-input verifier and inspect native cutouts and timing provenance.",
+            "Record consented reviewer identity, method, hashes, alternative explanations and a reasoned decision."
+          ],
+          "acceptance_gate": "A consenting qualified reviewer records an independent assessment; scientific acceptance and any later submission remain separate explicit decisions.",
+          "first_step": {
+            "command": [
+              "env",
+              "PYTHONPATH=src",
+              ".venv/bin/python",
+              "-m",
+              "precovery.tasks",
+              "review"
+            ],
+            "expected": "Pending status, null reviewer and nine open obligations.",
+            "inspect": "review/EVIDENCE.md",
+            "scope": "Run with PYTHONPATH=src from the project root; read-only baseline check."
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck",
+          "claim_kind": [
+            "observational",
+            "measured"
+          ],
+          "scope_change_triggers": [
+            "Any proposed new astrometric claim or external publication requires scientific review and authorization."
+          ]
+        }
+      ]
+    }
+  ]
+}

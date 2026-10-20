@@ -1,0 +1,14 @@
+{
+  "documented_exposures": 2,
+  "published_endpoints": 4,
+  "pair_motion_consistent": true,
+  "positives_passing": 2,
+  "negatives_rejected": 4,
+  "historical_arc_start_extension_days": 16057.597916666668,
+  "historical_extension_precision": "Discovery date known to day; midnight convention used, so interpret extension approximately.",
+  "new_arc_extension_days": 0,
+  "orbital_uncertainty_improvement": null,
+  "orbital_improvement_status": "Not estimated: requires consistent orbit refits with/without precovery, same weighting and epoch; current JPL solution already includes these data.",
+  "scientific_acceptance": false,
+  "mpc_submission": false
+}

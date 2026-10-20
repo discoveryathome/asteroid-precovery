@@ -1,0 +1,51 @@
+{
+  "orbit": {
+    "provider": "JPL Horizons",
+    "solution": "JPL#100",
+    "solution_date": "2023-Aug-18_06:14:19",
+    "elements_epoch_jd_tdb": 2458018.5,
+    "planetary_ephemeris": "DE441",
+    "perturbers": "SB441-N16",
+    "elements_and_state_source": "data/raw/horizons-an10-1955.txt",
+    "covariance_source": "data/raw/sbdb-an10.json",
+    "note": "SBDB osculating elements and covariance have their own epochs in the response; never substitute the SBDB elements at a different epoch into the saved Horizons prediction."
+  },
+  "catalogue": {
+    "name": "Gaia DR3",
+    "table": "gaiadr3.gaia_source",
+    "reference_epoch": 2016.0,
+    "frame": "ICRS",
+    "subset": "data/raw/gaia-dr3.csv",
+    "rows": 191,
+    "query": "data/raw/gaia-dr3.csv.provenance.json",
+    "original_publication_catalogue": "USNO-A2.0",
+    "archive_wcs": "GSC1 coefficients in native DSS FITS"
+  },
+  "software": {
+    "python": "3.14.6",
+    "dependencies": "requirements.lock",
+    "implementation": "src/precovery"
+  },
+  "images": {
+    "XE036": {
+      "plate_id": "07ID",
+      "plate_label": "E1325",
+      "survey": "POSSI-E",
+      "scan": "00",
+      "descendant": "00",
+      "header_date_obs": "1955-01-25T10:05:00",
+      "exposure_minutes": 45.0,
+      "sha256": "43c0795c30aeda78ee7c12666b51c64a6a1ea83c89fbc45aa98af9b40aa39344"
+    },
+    "XO036": {
+      "plate_id": "A3AY",
+      "plate_label": "O1325",
+      "survey": "POSSI-O",
+      "scan": "01",
+      "descendant": "00",
+      "header_date_obs": "1955-01-25T10:50:00",
+      "exposure_minutes": 12.0,
+      "sha256": "33ef9778fd606f5daf0100fd3a862f831204dc2427301e236271cda8d8bc1d49"
+    }
+  }
+}

@@ -1,0 +1,979 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.minorplanetcenter.net/mpc-ops-docs/astrometry/reporting-observations/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Reporting Observations - MPC Public Documentation Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/nav-buttons.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/grid-buttons2.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/faq-cards.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reporting-observations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MPC Public Documentation Hub" class="md-header__button md-logo" aria-label="MPC Public Documentation Hub" data-md-component="logo">
+      
+  <img src="../../../images/mpc-logo.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MPC Public Documentation Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reporting Observations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Smithsonian/mpc-public" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MPC Public Documentation Hub" class="md-nav__button md-logo" aria-label="MPC Public Documentation Hub" data-md-component="logo">
+      
+  <img src="../../../images/mpc-logo.jpeg" alt="logo">
+
+    </a>
+    MPC Public Documentation Hub
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Smithsonian/mpc-public" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../services/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Services
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Services
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../tutorials/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorials
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tutorials
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../software/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Software
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-begin-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How do I begin reporting?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-report-my-astrometry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How do I report my astrometry?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-the-ades-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's the ADES format?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-many-observations-should-i-make-of-each-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How many observations should I make of each object?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-quality-of-measurements-should-i-aim-to-produce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What quality of measurements should I aim to produce?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-i-report-approximate-or-preliminary-measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Can I report approximate or preliminary measures?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-i-need-to-identify-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Do I need to identify objects?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#should-i-separate-comet-and-minor-planet-observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Should I separate comet and minor-planet observations?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batches-with-multiple-observatory-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Batches with multiple observatory codes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e-mail-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-mail recommendations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spam-blocking-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spam-blocking systems
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-know-the-mpc-received-my-observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How do I know the MPC received my observations?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-message-bounced-do-i-need-to-resend-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A message bounced. Do I need to resend it?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-purpose-of-the-contact-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is the purpose of the contact details?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-common-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are some common mistakes?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#should-i-check-my-observations-before-reporting-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Should I check my observations before reporting them?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+
+
+
+                  
+
+
+  
+  
+
+
+<h1 id="reporting-observations">Reporting Observations<a class="headerlink" href="#reporting-observations" title="Permanent link">&para;</a></h1>
+<p>This page covers how to format and submit observations to the MPC, including format requirements, quality standards and common mistakes to avoid.</p>
+<h2 id="how-do-i-begin-reporting">How do I begin reporting?<a class="headerlink" href="#how-do-i-begin-reporting" title="Permanent link">&para;</a></h2>
+<p>Please follow these rules:</p>
+<ul>
+<li>If your site does not have an observatory code, <a href="../../observatory-and-program-codes/observatory-codes/#how-do-i-get-an-observatory-code">ask for it!</a></li>
+<li>If possible, report at least three observations of each object from each night: do not report single positions per night. As a general rule, batches that contain single positions will be returned in their entirety to the submitter.</li>
+<li>You should not start by observing fast-moving objects. It is important that you gain experience by observing "routine" objects before attempting to observe "unusual" objects. We also expect you to prove that you can produce good astrometry of known objects before you begin to discover new objects.</li>
+<li>In general, comets are harder to measure than minor planets. If we have a new observer reporting comet observations of bad or indifferent quality we do not know if it is simply a problem due to the comet (big, bright difficult-to-measure image) or a problem with the measurement/reduction process.</li>
+<li>The MPC encourages submitters to carefully examine any marginal detections before reporting. See <a href="../getting-started/#how-do-i-make-measurements">measurement guidance on signal-to-noise</a> for details.</li>
+<li>Reporting magnitudes is optional, but highly desirable. Please try to report magnitudes if you are submitting archival astrometry.</li>
+<li>MPC encourages observers to use the correct keywords in the observational header, particularly when it comes to rapid processing of NEOs or comets. Without the correct keyword, tracklets could end up in a wrong or slower queue. In addition, please submit new NEOs separately from NEOCP followup and/or incidental astrometry. Lastly, please follow the instructions on how to format other elements of the header. Issues such as omitting a space between one's first initial and last name slows down the process of the submitted astrometry, since the automated program code assignment will not be possible. Please follow the instructions reported on the <a href="../../observations/observational-details/">observational details page</a>).</li>
+</ul>
+<p>In particular:</p>
+<ul>
+<li>Batches containing observations of new NEO candidates must have "NEO CANDIDATE" in the subject line.</li>
+<li>Batches containing observations of objects already on the NEOCP must have "NEOCP" in the subject line.</li>
+<li>Batches containing observations of new comet candidates must have "NEW COMET" in the subject line.</li>
+<li>Batches containing observations of new TNO candidates must have "NEW TNO" in the subject line.</li>
+</ul>
+<p>See also <a href="#how-do-i-report-my-astrometry">How do I report my astrometry?</a> and <a href="#what-quality-of-measurements-should-i-aim-to-produce">What quality of measurements should I aim to produce?</a>.</p>
+<h2 id="how-do-i-report-my-astrometry">How do I report my astrometry?<a class="headerlink" href="#how-do-i-report-my-astrometry" title="Permanent link">&para;</a></h2>
+<p>Astrometric observations can be reported in two different formats:</p>
+<ul>
+<li>The <a href="#whats-the-ades-format">IAU Astrometric Data Exchange Standard (ADES)</a> is the preferred format for reporting observations to the MPC.</li>
+<li>The older 80-character MPC1992 format (also informally called obs80) may also be submitted.</li>
+</ul>
+<p>The use of the ADES format is not mandatory at the moment, but the MPC <strong>strongly</strong> prefers submission in this format, 
+and encourages users to familiarize themselves with the format.</p>
+<p>Observations reported in ADES format need to follow the rules described in the <a href="https://github.com/IAU-ADES/ADES-Master/blob/master/ADES_Description.pdf">ADES documentation</a> 
+and on the <a href="../../observations/ades-format/">MPC ADES Data Submission page</a>. 
+For a complete list of accepted values for ADES fields such as instrument mode, star catalog, and photometric band, see <a href="../../observations/valid-ades-values/">Valid ADES Field Values</a>.</p>
+<p>Observations reported in the MPC1992 format need to follow the rules detailed on the <a href="../../observations/mpc1992-format/">page describing the format</a>.
+Please read this document carefully and report the observations in the correct format.</p>
+<p>Observations of minor planets, comets and natural satellites, formatted as specified above, can be reported via:</p>
+<ol>
+<li>Observation Submission Forms (ADES only):<ul>
+<li><a href="https://minorplanetcenter.net/submit_xml">ADES XML Submission Form</a></li>
+<li><a href="https://minorplanetcenter.net/submit_psv">ADES PSV Submission Form</a></li>
+</ul>
+</li>
+<li><a href="../../observations/command-line-submissions/">MPC1992 cURL instructions</a></li>
+<li>E-mail to <a href="mailto:obs@cfa.harvard.edu">obs@cfa.harvard.edu</a> (MPC1992 only)</li>
+</ol>
+<p>Tutorials related to the submission of observations are available in the <a href="../../../tutorials/submission_tutorials/">Submission Tutorials</a> section of the MPC's documentation site.</p>
+<p>In addition to the above points, please also check the following notes:</p>
+<ul>
+<li>Do not report more than one position for each time of observation. Observations of objects that contain multiple positions for a single time of observation will be returned to the submitter for correction.</li>
+<li>When there is no trailing of the minor planet image (or you are measuring the middle of a trail) the time of observation is the mid-exposure time. If you are measuring both ends of a trail, then one end is associated with the start of the exposure, the other with the end. Alternatively, if the trail is very short, you can simply report the mid-point. However, you must not report both a trail-end and mid-point measures from the same trail.</li>
+<li>Note that reported magnitudes must be derived from the individual frames: do not obtain a magnitude from one frame and then copy it on all the other observations. Also, ensure that you report the magnitudes with the astrometry: do not say "Photometry to follow".</li>
+<li>Always report positions for every moving object in your images. Do not assume that just because an object is numbered that continuing observations are not important. The inclusion of well-known objects, particularly when there are also observations of unidentified objects, serves as a useful check of the quality of your measurements.</li>
+</ul>
+<h2 id="whats-the-ades-format">What's the ADES format?<a class="headerlink" href="#whats-the-ades-format" title="Permanent link">&para;</a></h2>
+<p>The Astrometric Data Exchange Standard (ADES) is the preferred format for reporting observations. For full details on the format, submission procedures, and validation, see the <a href="../../observations/ades-format/">ADES Data Submission</a> page. For the list of accepted field values, see <a href="../../observations/valid-ades-values/">Valid ADES Field Values</a>.</p>
+<p>The use of the ADES format is not mandatory at the moment, but the MPC strongly encourages users to familiarize themselves with the format.</p>
+<h2 id="how-many-observations-should-i-make-of-each-object">How many observations should I make of each object?<a class="headerlink" href="#how-many-observations-should-i-make-of-each-object" title="Permanent link">&para;</a></h2>
+<p>As a general rule, when pursuing high precision astrometry, it is preferable to obtain small quantities of deep, high SNR data.</p>
+<ul>
+<li>The MPC typically recommends taking a few observations over a period of an hour or so per object, per night. Additional astrometric positions are typically not helpful for the determination of the orbit.</li>
+<li>Observations of specific objects are best made on pairs of nearby nights as the accuracy of isolated single-night observations can be difficult to judge. By observing on pairs of nights any ambiguity is removed.</li>
+<li>Please try to not make only one observation of each object per night. Without specific appropriate reasons, if a batch contains any single positions, the entire batch will not be accepted and it will be returned to the sender.</li>
+<li>Observations of a potentially new object in groups many hours apart on a single night <em>can</em> be useful in particular in the case of a newly-discovered object that may be close to the Earth.</li>
+</ul>
+<p>However, we recognize that there might be cases in which more observations are needed, e.g. for photometric purposes, or for an object during a close encounter with the Earth. Even though the MPC always encourages the acquisition of high quality astrometry, we emphasize that it is not our place to discard large numbers of observations when they get sent to us. There will be cases in which objects are going to have hundreds of published astrometric and photometric measurements. While the MPC already de-weights these measurements for our orbit fits, it is up to the end user to decide what they want to do with them.</p>
+<h2 id="what-quality-of-measurements-should-i-aim-to-produce">What quality of measurements should I aim to produce?<a class="headerlink" href="#what-quality-of-measurements-should-i-aim-to-produce" title="Permanent link">&para;</a></h2>
+<p>Astrometry is a field where bad measures are generally of little or no use. It is important that observers can consistently produce observations with a consistency of &lt;1" for observations using the same comparison stars, and a night-to-night consistency limited only by the comparison star catalogue.</p>
+<p>A few additional notes:</p>
+<ul>
+<li>Please check if you have any timing errors before submitting observations (see <a href="../getting-started/#how-do-i-obtain-an-accurate-time">How do I obtain an accurate time?</a>).</li>
+<li>Please note that if you are using the <a href="#whats-the-ades-format">ADES</a> format, you are also able to report your astrometric uncertainties. Be sure you have read how to compute and submit your uncertainties in the <a href="https://github.com/IAU-ADES/ADES-Master/blob/master/ADES_Description.pdf">ADES documentation</a>.</li>
+</ul>
+<h2 id="can-i-report-approximate-or-preliminary-measures">Can I report approximate or preliminary measures?<a class="headerlink" href="#can-i-report-approximate-or-preliminary-measures" title="Permanent link">&para;</a></h2>
+<p>No.</p>
+<p>Approximate measurements will be ignored. Only report final astrometry.</p>
+<p>Don't report preliminary measures and then improve them. It is very time-consuming to replace preliminary measures.</p>
+<h2 id="do-i-need-to-identify-objects">Do I need to identify objects?<a class="headerlink" href="#do-i-need-to-identify-objects" title="Permanent link">&para;</a></h2>
+<p>You do not need to identify objects, but we suggest you do it if you can. All the observations will be validated anyway through orbit fitting.</p>
+<p>If you do not identify the object, the MPC checking procedures will first check if the object can be linked to any known solar system objects before processing it.</p>
+<p>However, every reported observation must have a designation. If you don't know the designation of a particular object, or are not bothering to identify objects, use an observer-assigned temporary designation. Observer-assigned temporary designations should be unique--don't call everything <code>X</code>!</p>
+<p>Observer-assigned temporary designations should be seven characters or less long, and begin in column 6 of the observational record. The designations must not be of the form of the packed (e.g. K23A00B, 00001, ~0023) or unpacked designations (e.g. 2023AB, 1, 620127) used by the MPC. Also:</p>
+<ul>
+<li>Observations of NEOCP objects must always be tagged with their NEOCP designations, as well as the initial observations made in support of an observatory code request.</li>
+<li>Observations reported for the first time when asking for a new observatory code need to include the provisional designation or the number that identifies the object.</li>
+<li>Observations of the same object on different nights must be given the same temporary designation only if they are reported in the same message and you are absolutely positive that all the nights refer to the same object. Correspondences of observer-assigned temporary and MPC-assigned provisional designations will be reported back to the observer via e-mail (see also <a href="../mpc-processing/#how-do-i-understand-the-designations-the-mpc-sends-me">How do I understand the designations the MPC sends me?</a>).</li>
+<li>Do not continue to use your observer-assigned designations once official provisional or permanent designations have been assigned.</li>
+</ul>
+<h2 id="should-i-separate-comet-and-minor-planet-observations">Should I separate comet and minor-planet observations?<a class="headerlink" href="#should-i-separate-comet-and-minor-planet-observations" title="Permanent link">&para;</a></h2>
+<p>The assignment of different types of objects to various queues for processing is automatic and based on the orbit corresponding to the designation assigned to each observation. Observations of different types of objects may now be freely mixed.</p>
+<h2 id="batches-with-multiple-observatory-codes">Batches with multiple observatory codes<a class="headerlink" href="#batches-with-multiple-observatory-codes" title="Permanent link">&para;</a></h2>
+<p>If you want to submit observations from two or more observatory codes in the same message, you must group each site's observations under an observational header appropriate for the site. A representation of an example follows:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>COD 608
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>OBS ...
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>MEA ...
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>... Rest of header ...
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Observations from code 608
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>COD 644
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>OBS ...
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>MEA ...
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>... Rest of header ...
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Observations from code 644
+</span></code></pre></div>
+<p>Failure to format the message as shown above will result in the batch being rejected by the automated routines. Note that later headers do not inherit anything from earlier headers. So you must include, at a minimum, OBS/MEA/TEL/NET lines on later headers.</p>
+<p>Note that this scheme must be followed if there are two (or more) headers from the same observatory code in the same message.</p>
+<h2 id="e-mail-recommendations">E-mail recommendations<a class="headerlink" href="#e-mail-recommendations" title="Permanent link">&para;</a></h2>
+<p>If you can, please use the <a href="../../observations/command-line-submissions/">cURL submission method</a> to submit the observations. If you submit ADES observations, the cURL method and website submission forms are also the only methods allowed; you cannot submit ADES by email.</p>
+<p>In case you are submitting observations in the MPC1992 format and you want to use e-mail, the following guidelines should be noted with regard to any e-mail submission of observations:</p>
+<ul>
+<li>Observations must be reported as plain ASCII files. Do not send, e.g., UUENCODE'd or BINHEX'ed files. This is important if you are using e-mail attachments.</li>
+<li>Please ensure that your mailer does not split the 80-column observation records--many mailers, such as PINE, will automatically break a line at about 72 characters. In PINE you can avoid this problem if the observations you wish to send are in a separate file by including the file using CTRL-R, rather than by using cut and paste.</li>
+<li>If you are using a mailer that can send HTML mail, please disable the inclusion of the HTML version. Inclusion of the HTML version more than doubles the length of the e-mail and the repetition of material is completely useless. In addition, the inclusion of HTML text may trigger the MPC's antispam e-mail filters, causing your message to be flagged as spam.</li>
+<li>Never send any kind of word-processor/DTP file. If you use a word processor or DTP package to prepare your observations, ensure that you use the package's 'Save as ASCII' option.</li>
+</ul>
+<h2 id="spam-blocking-systems">Spam-blocking systems<a class="headerlink" href="#spam-blocking-systems" title="Permanent link">&para;</a></h2>
+<p>If you use any sort of spam-blocking system to sift your incoming e-mail, you are warned that it is your responsibility to ensure that e-mail from the MPC is passed unimpeded. The list of e-mail addresses that must be allowed through are autoack/mpc/autodes/des/(initial.surname) at cfa.harvard.edu. If e-mail from any of these addresses is blocked, you may not get ACKs or designation files. Bounced messages will not be resent.</p>
+<p>Note that "Allowed Sender" systems will not work with our automated routines that send out information as e-mail returned to certain addresses will bounce.</p>
+<h2 id="how-do-i-know-the-mpc-received-my-observations">How do I know the MPC received my observations?<a class="headerlink" href="#how-do-i-know-the-mpc-received-my-observations" title="Permanent link">&para;</a></h2>
+<p>Upon receipt of a batch of observations, we send an automatic acknowledgement back to you. E-mail is not perfect and messages do sometimes get lost.</p>
+<p>If you have not received any acknowledgement from us or if you want to know what happened to your observations, please use our <a href="https://minorplanetcenter.net/wamo/">WAMO service</a>.</p>
+<p>Please also check that you have correctly used all the fields in the header. See the <a href="../../observations/observational-details/">information on how to personalize the acknowledgement</a>.</p>
+<p>If something is not clear or you still have questions about your observations, please submit a <a href="https://mpc-service.atlassian.net/servicedesk/customer/portals">Jira ticket</a>.</p>
+<p>Note that the acknowledgement is automatic and simply informs you that we have received your message. It says nothing about the formatting of the observations contained therein or their quality.</p>
+<h2 id="a-message-bounced-do-i-need-to-resend-it">A message bounced. Do I need to resend it?<a class="headerlink" href="#a-message-bounced-do-i-need-to-resend-it" title="Permanent link">&para;</a></h2>
+<p>It depends on the source of the bounceback message. obs@cfa.harvard.edu is an e-mail alias (google-group) that forwards incoming messages to various different internal email accounts.</p>
+<p>You should only resend your message if the bounceback indicates that obs@cfa is the source of the failure.</p>
+<p>You do not need to resend your message if the bounceback comes from any other e-mail address.</p>
+<h2 id="what-is-the-purpose-of-the-contact-details">What is the purpose of the contact details?<a class="headerlink" href="#what-is-the-purpose-of-the-contact-details" title="Permanent link">&para;</a></h2>
+<p>The contact details as published in the <a href="https://minorplanetcenter.net/iau/services/MPCServices.html"><em>MPCs</em></a> for each observatory code are intended as a contact point for persons with queries regarding a specific program. The contact address does not have to be the street address of the observatory. For professional programs it should be noted that the contact details are NOT intended to be a list of P.I.s on the project.</p>
+<p>The contact details MUST include:</p>
+<ul>
+<li>the name of a person connected with the program (who is willing to answer queries about the presented observations)</li>
+<li>a snail-mail address for that person (this can be a P.O. Box)</li>
+<li>an e-mail address for that person</li>
+</ul>
+<p><a href="../../observations/observational-details/">Information on how to specify the contact address</a> (as well as names of observers and measurers) is available.</p>
+<h2 id="what-are-some-common-mistakes">What are some common mistakes?<a class="headerlink" href="#what-are-some-common-mistakes" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Incorrectly-Identified Objects.</strong></p>
+<p>If you try to identify objects, ensure that the identifications are correct and that you used the packed forms of the designations in the appropriate columns of the observational records. If in doubt, use temporary designations.</p>
+</li>
+<li>
+<p><strong>Incorrect Times of Observations.</strong></p>
+<p>Ensure that the mid-points of your exposures are timed and reported correctly! The most common error by observers (and one of the trickiest to correct if the observation has already been published) is incorrect observation times (or occasionally even <em>dates</em>).</p>
+</li>
+<li>
+<p><strong>Non-ASCII Submissions.</strong></p>
+<p>Ensure that you send only plain ASCII e-mails. Encoded attachments will be ignored by the automated processing routines.</p>
+</li>
+<li>
+<p><strong>Incorrectly-Specified Observer Details.</strong></p>
+<p>If you do not include an <a href="../../observations/observational-details/">observational header</a> before the observations, the e-mail message will not be recognized as containing observations.</p>
+<p>Some observers specify observer details in the form used in the <em>MPCs</em>. These details are usually nicely formatted, but the observation processing routines will ignore them. Observer details must be formatted in <a href="../../observations/observational-details/">the proper format</a>.</p>
+</li>
+</ol>
+<h2 id="should-i-check-my-observations-before-reporting-them">Should I check my observations before reporting them?<a class="headerlink" href="#should-i-check-my-observations-before-reporting-them" title="Permanent link">&para;</a></h2>
+<p>Observer checking does not need to be anything more than checking that what you actually send is what you meant to send. Checking of designations, observation dates and times, positions and the <a href="../../observations/mpc1992-format/">format</a> is advisable.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.top", "navigation.footer", "navigation.expand", "navigation.indexes", "navigation.sections", "navigation.tracking", "content.code.copy", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascript/force-ipynb-download2.js"></script>
+      
+    
+  </body>
+</html>

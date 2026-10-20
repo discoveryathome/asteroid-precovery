@@ -1,0 +1,14 @@
+{
+  "observed_displacement_east_north_arcsec": [
+    -183.244407947291,
+    13.691180310149775
+  ],
+  "predicted_displacement_east_north_arcsec": [
+    -178.28905079009243,
+    13.205800799971712
+  ],
+  "displacement_error_arcsec": 4.97907198424563,
+  "consistent": true,
+  "independent_exposures": 2,
+  "stationary_hypothesis_displacement_arcsec": 0
+}

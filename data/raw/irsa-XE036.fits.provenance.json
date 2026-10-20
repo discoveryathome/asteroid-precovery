@@ -1,0 +1,10 @@
+{
+  "path": "data/raw/irsa-XE036.fits",
+  "url": "https://irsa.ipac.caltech.edu:443/workspace/TMP_8Ih5DA_1747905/Cutouts/129.5_72.665_eq.v0001/results/images_red/0001_129.50000000_72.66500000_dss1red_XE036.fits",
+  "retrieved_at": "2026-10-20T04:52:00.922976+00:00",
+  "sha256": "8e13cfae33376d061bf0ef678b6f5e5e2361b5749d7da96e8d100b749c04f173",
+  "bytes": 264960,
+  "content_type": "image/x-fits",
+  "etag": null,
+  "last_modified": "Tue, 20 Oct 2026 04:50:00 GMT"
+}

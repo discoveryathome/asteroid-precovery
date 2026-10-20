@@ -1,0 +1,46 @@
+{
+  "mode": "LOCAL",
+  "permission": "User approved local execution and default licenses; no scientific maintainer assigned",
+  "important_attempts": [
+    {
+      "service": "STScI position-only DSS",
+      "result": "Wrong 1953 field XE035 selected; retained as real epoch negative via IRSA cutout"
+    },
+    {
+      "service": "STScI plate finder and specific extraction",
+      "result": "Server temporary-directory permission error",
+      "snapshot": "research/sources/stscI-plate-extract-error.html"
+    },
+    {
+      "service": "STScI neighboring-field probe",
+      "url": "https://archive.stsci.edu/cgi-bin/dss_search?v=poss1_red&r=135&d=72.66&e=J2000&h=1&w=1&f=fits&c=none",
+      "result": "XE036 header has invalid 1955-01-25T09:65:00",
+      "snapshot": "research/sources/stscI-XE036-probe.fits"
+    },
+    {
+      "service": "IRSA Atlas",
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Atlas/nph-atlas?mission=DSS&locstr=129.5+72.665+eq&regSize=0.2&covers=on&mode=PI",
+      "snapshot": "research/sources/irsa-dss.xml",
+      "result": "12 overlapping image products; correct red and blue plates available"
+    },
+    {
+      "service": "IRSA Cutouts",
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/Cutouts/nph-cutouts?mission=DSS&min_size=1&max_size=3600&units=arcsec&locstr=129.5+72.665+eq&sizeX=600&ntable_cutouts=2&cutouttbl1=images_red&cutouttbl2=images_blue&mode=PI",
+      "snapshot": "research/sources/irsa-cutouts.xml",
+      "result": "Native service cutouts retrieved; all overlapping pixels equal independent byte-range extraction"
+    },
+    {
+      "service": "SBDB",
+      "result": "Initial full_prec parameter rejected; corrected to documented full-prec; successful request recorded with raw snapshot"
+    },
+    {
+      "service": "MOST API documentation",
+      "result": "Shell request returned HTTP 504; official page successfully read with web tool"
+    },
+    {
+      "service": "MOST live smoke query",
+      "url": "https://irsa.ipac.caltech.edu/cgi-bin/MOST/nph-most?catalog=wise_merge&input_type=name_input&obj_name=137108&obs_begin=2010+01+01&obs_end=2010+02+01&output_mode=Brief&ephem_step=0.05",
+      "result": "HTTP 504 Gateway Time-out; not a successful integration test. Offline DSS replication does not depend on MOST."
+    }
+  ]
+}

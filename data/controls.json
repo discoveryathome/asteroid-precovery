@@ -1,0 +1,19 @@
+{
+  "object": "137108 (1999 AN10)",
+  "discovery_date": "1999-01-13",
+  "observatory": "675",
+  "positive_controls": [
+    {"id": "an10-red-1955", "region": "XE036", "file": "data/raw/XE036.fits", "start": "1955-01-26T09:39:00", "end": "1955-01-26T10:24:00", "timescale": "UT1", "time_sigma_seconds": 30, "reference_endpoints_deg": [[129.6045,72.66269444444444],[129.39670833333332,72.66816666666666]], "reference_fractional_days": [26.40208,26.43333]},
+    {"id": "an10-blue-1955", "region": "XO036", "file": "data/raw/XO036.fits", "start": "1955-01-26T10:30:00", "end": "1955-01-26T10:42:00", "timescale": "UT1", "time_sigma_seconds": 30, "reference_endpoints_deg": [[129.35854166666667,72.66869444444444],[129.30516666666665,72.66991666666667]], "reference_fractional_days": [26.43750,26.44583]}
+  ],
+  "time_override": {
+    "source": "https://www.minorplanetcenter.net/iau/mpec/J99/J99N21.html",
+    "snapshot": "research/sources/mpec-1999-n21.html",
+    "method": "Published fractional-day trail-end times rounded back to the documented nearest minute; midpoint is arithmetic mean. Not inferred by minimizing residuals.",
+    "status": "document-supported replication override; independent plate-log review pending",
+    "conflict": "IRSA DATE-OBS says January 25 with times 10:05 red and 10:50 blue. STScI red header says January 25 09:65. MPC reports January 26 09:39-10:24 and 10:30-10:42.",
+    "sigma_policy": "Conservative 30 seconds 1-sigma floor; not a measured clock calibration. Pre-1962 Horizons UT is UT1, not modern UTC."
+  },
+  "negative_controls": ["wrong-epoch-XE035", "stationary-gaia-star", "wrong-match-offset-60arcsec", "injected-single-pixel-artifact"],
+  "sampling_limits": "Two exposures of one asteroid, four published endpoints; not four independent exposures. Small demonstration, not a population-level false-positive estimate."
+}

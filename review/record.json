@@ -1,0 +1,28 @@
+{
+  "status": "pending-independent-scientific-review",
+  "reviewer": null,
+  "reviewed_at": null,
+  "scientifically_accepted": false,
+  "submission_allowed": false,
+  "publication_allowed": false,
+  "scope": "Retrospective replication of two documented 1955 observations of 137108; not new astrometry",
+  "author_check": "Automated local pixel reduction and control checks; see review/validation.json",
+  "open_obligations": [
+    "Resolve archive DATE-OBS versus published trail-end times against original observing/plate logs.",
+    "Independently reduce both native image cutouts with a separate method and inspect all blends and plate artifacts.",
+    "Audit centroid covariance, correlated photographic noise, systematic floors and timing uncertainty.",
+    "Review Gaia propagation, proper-motion systematics, reference-star selection and local WCS residuals.",
+    "Check other moving-object confusers; the small catalogue check covers stationary sources, not every asteroid.",
+    "Increase documented controls and negative samples before estimating population false-alarm rates.",
+    "For new observations, perform appropriate independent linkage/orbit checks; JPL#100 already uses these controls.",
+    "Obtain a consenting scientific maintainer and actual review capacity before opening donor work.",
+    "Any future ADES formatting/submission requires separate scientific review and authorization."
+  ],
+  "decisions": [
+    {
+      "actor": "local-automated-verifier",
+      "decision": "Replication screen only; cannot accept science",
+      "record": "data/derived/measurements.json"
+    }
+  ]
+}

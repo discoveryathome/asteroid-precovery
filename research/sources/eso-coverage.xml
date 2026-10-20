@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1"
+xmlns="http://www.ivoa.net/xml/VOTable/v1.1" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.1 http://www.ivoa.net/xml/VOTable/v1.1">
+<RESOURCE type="results">
+<INFO name="QUERY_STATUS" value="OK"></INFO>
+<TABLE>
+<FIELD name="Title" ucd="meta.title" datatype="char" arraysize="*">
+  <DESCRIPTION>Short description of the image</DESCRIPTION>
+</FIELD>
+<FIELD name="Ra" ucd="pos.eq.ra;meta.main" datatype="double" unit="deg">
+  <DESCRIPTION>ICRS right-ascension of the center of the image</DESCRIPTION>
+</FIELD>
+<FIELD name="Dec" ucd="pos.eq.dec;meta.main" datatype="double" unit="deg">
+  <DESCRIPTION>ICRS declination of the center of the image</DESCRIPTION>
+</FIELD>
+<FIELD name="Dim" ucd="pos.wcs.naxes" datatype="int">
+  <DESCRIPTION>Number of image axes</DESCRIPTION>
+</FIELD>
+<FIELD name="Size" ucd="pos.wcs.naxis" datatype="int" arraysize="*" unit="pix">
+  <DESCRIPTION>Length in pixel of each axis</DESCRIPTION>
+</FIELD>
+<FIELD name="Scale" ucd="pos.wcs.scale" datatype="double" arraysize="*" unit="deg/pix">
+  <DESCRIPTION>Scale in degree per pixel of each image axis</DESCRIPTION>
+</FIELD>
+<FIELD name="Format" ucd="meta.code.mime" datatype="char" arraysize="*">
+  <DESCRIPTION>MIME-type of the object associated with the image: e.g. "image/fits"</DESCRIPTION>
+</FIELD>
+<FIELD name="Url" ucd="meta.ref.url" datatype="char" arraysize="*">
+  <DESCRIPTION>URL to be used to access or retrieve the image</DESCRIPTION>
+</FIELD>
+<FIELD name="Equinox" ucd="time.equinox" datatype="char" arraysize="*">
+  <DESCRIPTION>Equinox of the coordinate system used for the image World Coordinate System</DESCRIPTION>
+</FIELD>
+<FIELD name="Bandpass" ucd="instr.bandpass" datatype="char" arraysize="*">
+  <DESCRIPTION>Bandpass by name</DESCRIPTION>
+</FIELD>
+<FIELD ID="Name of the DSS survey" name="SurveyName" ucd="survey" datatype="char" arraysize="*"/>
+<DATA><TABLEDATA>
+<TR><TD>ESO Digitized Sky Survey</TD><TD>129.600000</TD><TD>72.660000</TD><TD>2</TD><TD>317,317</TD><TD>-0.000473,0.000473</TD><TD>image/fits</TD><TD><![CDATA[http://archive.eso.org/dss/dss/image?ra=8%2038%2024.000000&dec=+72%2039%2036.0&x=9.000000&y=9.000000&mime-type=download-fits&Sky-Survey=DSS-1&equinox=J2000&statsmode=VO]]></TD><TD>J2000</TD><TD>optical</TD><TD>DSS-1</TD></TR>
+<TR><TD>ESO Digitized Sky Survey</TD><TD>129.600000</TD><TD>72.660000</TD><TD>2</TD><TD>535,535</TD><TD>-0.000280,0.000280</TD><TD>image/fits</TD><TD><![CDATA[http://archive.eso.org/dss/dss/image?ra=8%2038%2024.000000&dec=+72%2039%2036.0&x=9.000000&y=9.000000&mime-type=download-fits&Sky-Survey=DSS2-red&equinox=J2000&statsmode=VO]]></TD><TD>J2000</TD><TD>optical</TD><TD>DSS2-red</TD></TR>
+<TR><TD>ESO Digitized Sky Survey</TD><TD>129.600000</TD><TD>72.660000</TD><TD>2</TD><TD>535,535</TD><TD>-0.000281,0.000281</TD><TD>image/fits</TD><TD><![CDATA[http://archive.eso.org/dss/dss/image?ra=8%2038%2024.000000&dec=+72%2039%2036.0&x=9.000000&y=9.000000&mime-type=download-fits&Sky-Survey=DSS2-blue&equinox=J2000&statsmode=VO]]></TD><TD>J2000</TD><TD>optical</TD><TD>DSS2-blue</TD></TR>
+<TR><TD>ESO Digitized Sky Survey</TD><TD>129.600000</TD><TD>72.660000</TD><TD>2</TD><TD>535,535</TD><TD>-0.000280,0.000281</TD><TD>image/fits</TD><TD><![CDATA[http://archive.eso.org/dss/dss/image?ra=8%2038%2024.000000&dec=+72%2039%2036.0&x=9.000000&y=9.000000&mime-type=download-fits&Sky-Survey=DSS2-infrared&equinox=J2000&statsmode=VO]]></TD><TD>J2000</TD><TD>ir</TD><TD>DSS2-infrared</TD></TR>
+</TABLEDATA></DATA></TABLE>
+</RESOURCE>
+</VOTABLE>

@@ -1,0 +1,10 @@
+{
+  "path": "data/raw/most-instructions.html",
+  "url": "https://irsa.ipac.caltech.edu/applications/MOST/instructions.html",
+  "retrieved_at": "2026-10-20T04:55:59.790088+00:00",
+  "sha256": "6a56529ecf6782079157d1549f51f2004f178a35289f90017b67c277c75a6675",
+  "bytes": 17295,
+  "content_type": "text/html",
+  "etag": null,
+  "last_modified": null
+}

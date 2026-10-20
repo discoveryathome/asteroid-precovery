@@ -1,0 +1,28 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/data/DSS/images/dss1blue/dss1blue_XO036.fits",
+  "retrieved_at": "2026-10-20T04:51:29.240169+00:00",
+  "parent_bytes": 1061694720,
+  "parent_checksum": null,
+  "parent_checksum_reason": "Full plate intentionally not downloaded",
+  "header_range": [
+    0,
+    28799
+  ],
+  "header_range_sha256": "7c86d1cb8caaa84d007fc5223898459436edfe61dfeab6b201cd4fb97cec1c44",
+  "pixel_range": [
+    750885120,
+    778394879
+  ],
+  "pixel_range_sha256": "e664b75d8712644b18dddc0e5fc9b3ac1d7b57abf4fd58ecaff1031a19edd6a5",
+  "pixel_bounds_zero_based": [
+    21475,
+    22072,
+    16295,
+    16892
+  ],
+  "cutout_size_arcmin": 10,
+  "native_pixels": true,
+  "etag": null,
+  "last_modified": "Tue, 09 Sep 2008 22:51:13 GMT",
+  "sha256": "33ef9778fd606f5daf0100fd3a862f831204dc2427301e236271cda8d8bc1d49"
+}

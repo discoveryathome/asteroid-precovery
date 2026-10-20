@@ -1,0 +1,10 @@
+{
+  "path": "data/raw/mpc-reporting.html",
+  "url": "https://docs.minorplanetcenter.net/mpc-ops-docs/astrometry/reporting-observations/",
+  "retrieved_at": "2026-10-20T04:56:00.495357+00:00",
+  "sha256": "98e683480c491853fd0d4869502db4a5c2bb98c69106e94df1ceca2f868aa3c3",
+  "bytes": 44064,
+  "content_type": "text/html; charset=utf-8",
+  "etag": "W/\"6ac55e4f-ac20\"",
+  "last_modified": "Tue, 06 Oct 2026 20:47:11 GMT"
+}

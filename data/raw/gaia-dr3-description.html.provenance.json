@@ -1,0 +1,10 @@
+{
+  "path": "data/raw/gaia-dr3-description.html",
+  "url": "https://www.cosmos.esa.int/web/gaia/dr3",
+  "retrieved_at": "2026-10-20T04:56:02.813931+00:00",
+  "sha256": "e250fcbf0fc41d8bb34156050581c456c7d87fac5fb99a2753c8638df4b82b47",
+  "bytes": 111176,
+  "content_type": "text/html;charset=UTF-8",
+  "etag": "\"5a780a6a\"",
+  "last_modified": null
+}

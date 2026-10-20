@@ -1,0 +1,346 @@
+[
+  {
+    "x": 175.34523163171488,
+    "y": 178.82901296302478,
+    "length_pixel": 134.94274952793202,
+    "angle_rad": 0.2320451079787539,
+    "sigma_pixel": 0.9067596237473833,
+    "amplitude": 538.7513007690557,
+    "background": 2876.896122889815,
+    "noise": 246.11159999999998,
+    "snr": 15.694079487958835,
+    "delta_bic_vs_point": 394.2179909661875,
+    "length_ratio": 0.9837184342357476,
+    "angle_error_deg": 0.2160493688202136,
+    "centroid_covariance_pixel2": [
+      [
+        1.0989540788329073,
+        0.25724018753497735
+      ],
+      [
+        0.2572401875349041,
+        0.07280942222299193
+      ]
+    ],
+    "fit_converged": true,
+    "unmasked_pixels": 12002,
+    "pixel_bounds": [
+      91,
+      264,
+      144,
+      215
+    ],
+    "id": "an10-red-1955",
+    "control_kind": "documented-positive",
+    "region": "XE036",
+    "image_file": "data/raw/XE036.fits",
+    "measured_ra_deg": 129.5027271535704,
+    "measured_dec_deg": 72.66564671825117,
+    "observation_time": "1955-01-26T10:01:30",
+    "timescale": "UT1",
+    "observation_time_origin": "MPEC trail-end midpoint override",
+    "header_date_obs": "1955-01-25T10:05:00",
+    "exposure_seconds": 2700.0,
+    "residual_east_north_arcsec": [
+      3.9922165318001595,
+      -0.22557509580565238
+    ],
+    "residual_arcsec": 3.998584369577091,
+    "measurement_covariance_east_north_arcsec2": [
+      [
+        10.251809202998755,
+        -0.7834494053100303
+      ],
+      [
+        -0.7834494053098187,
+        0.346095746198046
+      ]
+    ],
+    "combined_mahalanobis_squared": 1.4886263370312838,
+    "nearest_stationary_catalogue_arcsec": 46.18792829821501,
+    "stationary_match": false,
+    "epoch_matches": true,
+    "time_provenance": true,
+    "inside_coverage": true,
+    "calibration_valid": true,
+    "artifact_flag": false,
+    "edge_flag": false,
+    "verdict": {
+      "screen_pass": true,
+      "reasons": [],
+      "scientifically_accepted": false,
+      "submission_allowed": false,
+      "status": "awaiting-independent-review"
+    }
+  },
+  {
+    "x": 471.74208012592595,
+    "y": 341.28476347456996,
+    "length_pixel": 62.47301869958256,
+    "angle_rad": 0.22785531386663185,
+    "sigma_pixel": 1.5149092993341473,
+    "amplitude": 2395.355248208371,
+    "background": 3949.2156639322143,
+    "noise": 308.38079999999997,
+    "snr": 45.199958882683696,
+    "delta_bic_vs_point": 1767.4338727422376,
+    "length_ratio": 1.014584698288136,
+    "angle_error_deg": 0.19771937161440564,
+    "centroid_covariance_pixel2": [
+      [
+        0.10486077509069745,
+        0.023019532104348317
+      ],
+      [
+        0.023019532104353816,
+        0.01007605826296802
+      ]
+    ],
+    "fit_converged": true,
+    "unmasked_pixels": 5238,
+    "pixel_bounds": [
+      420,
+      521,
+      314,
+      367
+    ],
+    "id": "an10-blue-1955",
+    "control_kind": "documented-positive",
+    "region": "XO036",
+    "image_file": "data/raw/XO036.fits",
+    "measured_ra_deg": 129.33188744848061,
+    "measured_dec_deg": 72.66944982389288,
+    "observation_time": "1955-01-26T10:36:00",
+    "timescale": "UT1",
+    "observation_time_origin": "MPEC trail-end midpoint override",
+    "header_date_obs": "1955-01-25T10:50:00",
+    "exposure_seconds": 720.0,
+    "residual_east_north_arcsec": [
+      -0.9623011395493796,
+      0.259804414372411
+    ],
+    "residual_arcsec": 0.9967556455347649,
+    "measurement_covariance_east_north_arcsec2": [
+      [
+        7.039431030671632,
+        -0.48194039531081184
+      ],
+      [
+        -0.48194039531081745,
+        0.2890840338001398
+      ]
+    ],
+    "combined_mahalanobis_squared": 0.2138252894934351,
+    "nearest_stationary_catalogue_arcsec": 11.667429671484816,
+    "stationary_match": false,
+    "epoch_matches": true,
+    "time_provenance": true,
+    "inside_coverage": true,
+    "calibration_valid": true,
+    "artifact_flag": false,
+    "edge_flag": false,
+    "verdict": {
+      "screen_pass": true,
+      "reasons": [],
+      "scientifically_accepted": false,
+      "submission_allowed": false,
+      "status": "awaiting-independent-review"
+    }
+  },
+  {
+    "x": 152.88590935396135,
+    "y": 94.19056831592884,
+    "length_pixel": 66.42915473045095,
+    "angle_rad": 0.1415844023739059,
+    "sigma_pixel": 1.4967451067708364,
+    "amplitude": 149.72451878060002,
+    "background": 3964.196649613058,
+    "noise": 244.629,
+    "snr": 4.010546880394918,
+    "delta_bic_vs_point": -278.3928480082666,
+    "length_ratio": 1.0788337959756829,
+    "angle_error_deg": 4.74523975166546,
+    "centroid_covariance_pixel2": [
+      [
+        13.66993094721296,
+        1.8988398783672276
+      ],
+      [
+        1.8988398783672662,
+        0.8211275991686
+      ]
+    ],
+    "fit_converged": true,
+    "unmasked_pixels": 5353,
+    "pixel_bounds": [
+      104,
+      205,
+      65,
+      118
+    ],
+    "id": "stationary-gaia-star",
+    "control_kind": "real-pixel-negative",
+    "image_file": "data/raw/XO036.fits",
+    "reference_source_id": "1122349553733816960",
+    "residual_arcsec": 405.64359912756464,
+    "stationary_match": true,
+    "nearest_stationary_catalogue_arcsec": 2.3638849424887507,
+    "artifact_flag": false,
+    "edge_flag": false,
+    "epoch_matches": true,
+    "time_provenance": true,
+    "inside_coverage": true,
+    "calibration_valid": true,
+    "verdict": {
+      "screen_pass": false,
+      "reasons": [
+        "delta_bic_vs_point",
+        "residual_arcsec",
+        "snr",
+        "stationary_match"
+      ],
+      "scientifically_accepted": false,
+      "submission_allowed": false,
+      "status": "rejected-by-screen"
+    }
+  },
+  {
+    "x": 470.0311160866508,
+    "y": 398.1893273954807,
+    "length_pixel": 73.56099611439102,
+    "angle_rad": 0.23494753790162326,
+    "sigma_pixel": 1.2683628039558954,
+    "amplitude": 119.31861863223087,
+    "background": 3917.1728837877345,
+    "noise": 272.79839999999996,
+    "snr": 2.784857576048531,
+    "delta_bic_vs_point": -16.73434896023924,
+    "length_ratio": 1.1946575113872775,
+    "angle_error_deg": 0.6040738761806563,
+    "centroid_covariance_pixel2": [
+      [
+        24.049331121604055,
+        5.56253564037782
+      ],
+      [
+        5.5625356403776385,
+        2.0186201033432556
+      ]
+    ],
+    "fit_converged": true,
+    "unmasked_pixels": 5353,
+    "pixel_bounds": [
+      420,
+      521,
+      374,
+      427
+    ],
+    "id": "wrong-match-offset-60arcsec",
+    "control_kind": "real-pixel-negative",
+    "image_file": "data/raw/XO036.fits",
+    "reference_source_id": null,
+    "residual_arcsec": 57.72089617568866,
+    "stationary_match": false,
+    "nearest_stationary_catalogue_arcsec": 27.338733413874806,
+    "artifact_flag": false,
+    "edge_flag": false,
+    "epoch_matches": true,
+    "time_provenance": true,
+    "inside_coverage": true,
+    "calibration_valid": true,
+    "verdict": {
+      "screen_pass": false,
+      "reasons": [
+        "delta_bic_vs_point",
+        "residual_arcsec",
+        "snr"
+      ],
+      "scientifically_accepted": false,
+      "submission_allowed": false,
+      "status": "rejected-by-screen"
+    }
+  },
+  {
+    "x": 470.81038207746707,
+    "y": 340.76265652176284,
+    "length_pixel": 49.564460224383744,
+    "angle_rad": 0.0805609343288476,
+    "sigma_pixel": 0.5004696573482458,
+    "amplitude": 91.19013486283677,
+    "background": 3929.5925520259566,
+    "noise": 305.0642332792624,
+    "snr": 0.9852861263771944,
+    "delta_bic_vs_point": -17.27836028147045,
+    "length_ratio": 0.8049449821592616,
+    "angle_error_deg": 8.241626921898746,
+    "centroid_covariance_pixel2": [
+      [
+        81.21651691289524,
+        6.3372826857938085
+      ],
+      [
+        6.337282685794345,
+        1.3981803509223256
+      ]
+    ],
+    "fit_converged": true,
+    "unmasked_pixels": 5353,
+    "pixel_bounds": [
+      420,
+      521,
+      314,
+      367
+    ],
+    "id": "injected-single-pixel-artifact",
+    "control_kind": "synthetic-negative",
+    "residual_arcsec": 0.12632182232597974,
+    "artifact_flag": true,
+    "stationary_match": false,
+    "edge_flag": false,
+    "epoch_matches": true,
+    "time_provenance": true,
+    "inside_coverage": true,
+    "calibration_valid": true,
+    "verdict": {
+      "screen_pass": false,
+      "reasons": [
+        "artifact_flag",
+        "delta_bic_vs_point",
+        "snr"
+      ],
+      "scientifically_accepted": false,
+      "submission_allowed": false,
+      "status": "rejected-by-screen"
+    }
+  },
+  {
+    "id": "wrong-epoch-XE035",
+    "control_kind": "real-metadata-negative",
+    "file": "data/raw/irsa-XE035.fits",
+    "measurement_performed": false,
+    "header_date_obs": "1953-02-18T06:37:00",
+    "epoch_matches": false,
+    "time_provenance": false,
+    "verdict": {
+      "screen_pass": false,
+      "reasons": [
+        "angle_error_deg",
+        "artifact_flag",
+        "calibration_valid",
+        "delta_bic_vs_point",
+        "edge_flag",
+        "epoch_matches",
+        "fit_converged",
+        "inside_coverage",
+        "length_ratio",
+        "residual_arcsec",
+        "snr",
+        "stationary_match",
+        "time_provenance"
+      ],
+      "scientifically_accepted": false,
+      "submission_allowed": false,
+      "status": "rejected-by-screen"
+    }
+  }
+]

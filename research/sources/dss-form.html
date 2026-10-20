@@ -1,0 +1,173 @@
+<HTML>
+<HEAD>
+<TITLE>The STScI Digitized Sky Survey</TITLE>
+</HEAD>
+
+<BODY>
+
+<center>
+<!-- IMG SRC="/images/galaxy_face_2.gif" height=96 width=97 ALIGN=middle ALT="" -->
+<H2>The STScI Digitized Sky Survey</H2>
+<div width="60%">
+<b>NOTE:</b> To obtain target coordinates for <b>HST Phase 2 proposals</b>,
+<br/>select the <u>HST Phase 2 (GSC2)</u> survey option.
+</div>
+</center>
+
+<b>
+
+<P> 
+
+<HR>
+<center><b>
+[
+  <A HREF="http://archive.stsci.edu/mast_news.php?mission=DSS&time=6+MONTH&out=html&desc=t"><em>New!</em></A>
+| <A HREF="/dss/dss_help.html">Help</A>
+| <A HREF="/dss/faq.html">FAQ</A>
+| <A HREF="/dss/copyright.html">&#169;</A>
+| <A HREF="/dss/acknowledging.html">Acknowledging DSS</A>
+| <A HREF="/dss/sites.html">Other DSS Sites</A>
+| <A HREF="/">Archive</A>
+| <A HREF="http://www.stsci.edu/">STScI</A>
+]
+<HR>
+</b></center>
+
+<form method=get action="/cgi-bin/dss_form">
+
+<center>
+
+<h3><a href="/dss/dss_help.html#resolver">Get an Object's Coordinates</a></h3>
+
+Object name <input name="target" value="">
+<input type="submit" value="GET COORDINATES">
+<input type="reset"  value="Clear">
+
+<br>
+
+Get coordinates from
+<input type="radio" name="resolver" value="SIMBAD" checked>
+   <a href="http://cdsweb.u-strasbg.fr/Simbad.html"            >SIMBAD</A>
+<input type="radio" name="resolver" value="NED" >
+   <a href="http://nedwww.ipac.caltech.edu/">NED</A>
+
+
+
+</center>
+
+</form>
+
+<hr size=5>
+
+<p>
+
+
+
+<form method="get" action="/cgi-bin/dss_search">
+
+<center>
+<h3><a href="/dss/dss_help.html#retrieve">Retrieve an Image</a></h3>
+
+
+
+<a href="/dss/dss_help.html#generation">Retrieve from</a><br>
+    <select name="v" size="7">
+    <option value="poss2ukstu_red" selected>POSS2/UKSTU Red</option>
+    <option value="poss2ukstu_blue" >POSS2/UKSTU Blue</option>
+    <option value="poss2ukstu_ir" >POSS2/UKSTU IR</option>
+    <option value="poss1_red" >POSS1 Red</option>
+    <option value="poss1_blue" >POSS1 Blue</option>
+    <option value="quickv" >Quick-V</option>
+    <option value="phase2_gsc2" >HST Phase 2 (GSC2)</option>
+    <option value="phase2_gsc1" >HST Phase 2 (GSC1)</option>
+    </select>
+    <br>(<a href="http://gsss.stsci.edu/SkySurveys/Surveys.htm">detailed information about the Surveys</a>)
+
+<p>
+
+<a href="/dss/dss_help.html#coordinates">RA</a>  <input name=r value="" >
+<a hreF="/dss/dss_help.html#coordinates">Dec</a> <input name=d value="">
+<select name=e><option selected>J2000<option >B1950</select>
+
+<p>
+
+<a href=/dss/dss_help.html#size>Height</a> <input name=h size=7 value="15.0"> <small>(max: 60.0)</small>
+<a href=/dss/dss_help.html#size>Width</a>  <input name=w size=7 value="15.0" > <small>(max: 60.0)</small>
+arcminutes
+
+<p>
+
+<a href="/dss/dss_help.html#format">File format</a>
+   <select name=f>
+   <option value=fits selected>FITS
+   <option value=gif  >GIF
+   </select>
+
+<a href=/dss/dss_help.html#compression>Compression</a> (FITS only)
+   <select name=c>
+   <option value=none selected>None
+   <option value=z    >Unix-compression
+   <option value=gz   >gzip
+   </select>
+
+<br>
+
+<input type=checkbox name=s > Save file to disk (instead of displaying)
+
+<p>
+<a href=/dss/dss_help.html#fov>HST Field of View Overlay (1st generation GIF only)</a>:
+<select name=fov>
+<option selected>NONE
+<option >LAUNCH
+<option >SM93
+<option >SM97
+</select><br>
+<a href=/dss/dss_help.html#fov>Roll angle (V3)</a>: <input name=v3 value="">
+</center>
+
+<P>
+
+<center>
+<INPUT TYPE="submit" VALUE="      RETRIEVE IMAGE      ">
+<INPUT TYPE="reset"  VALUE="  Reset values to defaults  ">
+</center>
+
+<p>
+
+</form>
+
+
+<P>
+
+<HR>
+<center><b>
+[
+  <A HREF="http://archive.stsci.edu/mast_news.php?mission=DSS&time=6+MONTH&out=html&desc=t"><em>New!</em></A>
+| <A HREF="/dss/dss_help.html">Help</A>
+| <A HREF="/dss/faq.html">FAQ</A>
+| <A HREF="/dss/copyright.html">&#169;</A>
+| <A HREF="/dss/acknowledging.html">Acknowledging DSS</A>
+| <A HREF="/dss/sites.html">Other DSS Sites</A>
+| <A HREF="/">Archive</A>
+| <A HREF="http://www.stsci.edu/">STScI</A>
+]
+</b></center>
+<HR>
+<P>
+<center>
+<B><I>The Digitized Sky Survey copyright &#169; 1994,
+Association of Universities for Research in Astronomy, Inc.
+All use subject to copyright notices given in
+the <a href="/dss/copyright.html">copyright summary</a>.
+Copyright information specific to individual plates is provided in the
+downloaded FITS headers.
+<p>
+Scientific citations of this data must include
+information given in the <a href="/dss/acknowledging.html">acknowledgements</a>.
+</b>
+<p>
+<A HREF="mailto:archive@stsci.edu"><ADDRESS>archive@stsci.edu</ADDRESS></A>
+</center>
+
+</BODY>
+</HTML>
