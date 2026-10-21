@@ -1,0 +1,14 @@
+test_byte_range_and_archive_service_cutouts_agree (test_science.ArchivePixelAgreement.test_byte_range_and_archive_service_cutouts_agree) ... ok
+test_covariance_and_time_bounds (test_science.ScientificInvariants.test_covariance_and_time_bounds) ... ok
+test_known_injected_trail_measured_not_echoed (test_science.ScientificInvariants.test_known_injected_trail_measured_not_echoed) ... ok
+test_ra_wrap_and_polar_projection (test_science.ScientificInvariants.test_ra_wrap_and_polar_projection) ... ok
+test_alternatives_override_perfect_residual (test_verifier.VerificationTests.test_alternatives_override_perfect_residual) ... ok
+test_corruption_rejected (test_verifier.VerificationTests.test_corruption_rejected) ... ok
+test_invalid_archive_time_rejected (test_verifier.VerificationTests.test_invalid_archive_time_rejected) ... ok
+test_missing_nonfinite_wrong_epoch_and_mismatch (test_verifier.VerificationTests.test_missing_nonfinite_wrong_epoch_and_mismatch) ... ok
+test_screen_never_accepts_scientifically (test_verifier.VerificationTests.test_screen_never_accepts_scientifically) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.112s
+
+OK

@@ -1,0 +1,76 @@
+{
+  "schema": "bounded-scientific-review/v1",
+  "id": "an10-XE036-timing-20261021",
+  "status": "pending-qualified-reviewer",
+  "scope": "Assess whether the published start/end timing for the single XE036 exposure can be adopted for retrospective replication, and what original-log evidence is still needed. No astrometric, identity, new-observation or submission acceptance.",
+  "evidence": [
+    {
+      "path": "data/controls.json",
+      "sha256": "07746c45cdaf33428e8745125170ee88764a49c1056893de35e8741ca9df56ba"
+    },
+    {
+      "path": "data/versions.json",
+      "sha256": "83abaf37ad4f834234ab4025faab37cf6c1a91ceaf60fbbda8f08e51e03c029d"
+    },
+    {
+      "path": "data/raw/XE036.fits",
+      "sha256": "43c0795c30aeda78ee7c12666b51c64a6a1ea83c89fbc45aa98af9b40aa39344"
+    },
+    {
+      "path": "data/raw/XE036.original-header.txt",
+      "sha256": "cbe783947ae2c02397f7a0ebb524168a6c4f7fed614adcc6bdaf815278dade01"
+    },
+    {
+      "path": "data/raw/XE036.provenance.json",
+      "sha256": "d608425201033477c855214189938e0c8ac25c570e9773ed30207eed35a72f51"
+    },
+    {
+      "path": "data/raw/irsa-XE036.fits",
+      "sha256": "8e13cfae33376d061bf0ef678b6f5e5e2361b5749d7da96e8d100b749c04f173"
+    },
+    {
+      "path": "data/raw/irsa-XE036.fits.provenance.json",
+      "sha256": "8437e0fdd686cb7854ad64407896ce4e91e78ff51604022493cbbd462d84af4c"
+    },
+    {
+      "path": "research/sources/mpec-1999-n21.html",
+      "sha256": "792d33e1edcbd867ca06e4fcb2e849687fa450b15e32b50a6ef44c1548788818"
+    },
+    {
+      "path": "research/sources/irsa-images.tbl",
+      "sha256": "22f3ae575b032a2d60363c09bbfeb4fe49ed43fdcc25c722230a8a44c0ff16f8"
+    },
+    {
+      "path": "review/record.json",
+      "sha256": "9973e7b45da80be406cac432cbfee392d84c61b3e90d6c4ea0a74023d3697093"
+    }
+  ],
+  "observations": {
+    "archive_DATE_OBS": "1955-01-25T10:05:00",
+    "published_lines": [
+      "J99A10N 5 1955 01 26.40208 08 38 25.08 +72 39 45.7                      675",
+      "J99A10N 5 1955 01 26.43333 08 37 35.21 +72 40 05.4                      675"
+    ],
+    "replication_start": "1955-01-26T09:39:00",
+    "replication_end": "1955-01-26T10:24:00",
+    "working_timescale": "UT1",
+    "time_sigma_seconds": 30,
+    "sigma_status": "policy floor; not measured clock uncertainty",
+    "known_conflict": "IRSA DATE-OBS says January 25 with times 10:05 red and 10:50 blue. STScI red header says January 25 09:65. MPC reports January 26 09:39-10:24 and 10:30-10:42."
+  },
+  "reviewer": null,
+  "consent": false,
+  "reviewed_at": null,
+  "verdict": "pending",
+  "rationale": null,
+  "independent_checks": [],
+  "additional_evidence": [],
+  "unresolved": [
+    "Original plate/observing-log timing and date convention not yet established.",
+    "Published fractional days do not independently authenticate an archive-to-plate alias.",
+    "30 second uncertainty floor requires scientific justification; not clock calibration."
+  ],
+  "scientifically_accepted": false,
+  "submission_allowed": false,
+  "publication_allowed": false
+}

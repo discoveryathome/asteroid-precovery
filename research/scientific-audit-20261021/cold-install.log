@@ -1,0 +1,47 @@
+Using CPython 3.14.6 interpreter at: /opt/homebrew/opt/python@3.14/bin/python3.14
+Creating virtual environment at: .replay/cold-20261021/venv
+Activate with: source .replay/cold-20261021/venv/bin/activate
+Using Python 3.14.6 environment at: .replay/cold-20261021/venv
+Resolved 26 packages in 327ms
+Downloading astropy (6.3MiB)
+Downloading pillow (4.6MiB)
+Downloading scipy (19.5MiB)
+Downloading astropy-iers-data (1.9MiB)
+Downloading fonttools (3.0MiB)
+Downloading matplotlib (8.9MiB)
+Downloading numpy (5.2MiB)
+ Downloaded astropy-iers-data
+ Downloaded pillow
+ Downloaded fonttools
+ Downloaded matplotlib
+ Downloaded numpy
+ Downloaded astropy
+ Downloaded scipy
+Prepared 15 packages in 2.18s
+Installed 26 packages in 192ms
+ + astropy==8.0.2
+ + astropy-iers-data==0.2026.10.19.0.52.1
+ + attrs==26.1.0
+ + certifi==2026.10.19
+ + charset-normalizer==3.5.2
+ + contourpy==1.4.0
+ + cycler==0.12.1
+ + fonttools==4.67.0
+ + idna==3.20
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + kiwisolver==1.5.1
+ + matplotlib==3.11.2
+ + numpy==2.5.4
+ + packaging==26.3
+ + pillow==13.0.0
+ + pyerfa==2.0.1.5
+ + pyparsing==3.3.3
+ + python-dateutil==2.9.0.post0
+ + pyyaml==6.0.3
+ + referencing==0.37.0
+ + requests==2.34.2
+ + rpds-py==2026.9.1
+ + scipy==1.18.1
+ + six==1.17.0
+ + urllib3==2.8.0

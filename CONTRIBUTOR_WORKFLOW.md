@@ -56,3 +56,11 @@ For the next monitored cohort, record cold-start orientation time, first useful
 artifact, reviewer minutes, acceptance latency, duplicate work and unsuccessful
 sessions. Later sessions inherit every known valid result. A lack of improvements
 is evidence to revise the task pool, not a reason to reset it to weaker baselines.
+
+## Bounded timing review and fresh setup
+
+[The 21 October review package](research/scientific-audit-20261021/REPORT.md)
+prepares one hash-bound XE036 timing obligation and a review decision template.
+A fresh environment passed the controls and reproduced all 12 derived outputs
+byte-for-byte. Qualified reviewer assignment and independent donor onboarding
+remain pending. The technical setup pass cannot grant scientific acceptance.

@@ -1,0 +1,4 @@
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 34839.377083 from DATE-OBS'. [astropy.wcs.wcs]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 35212.325000 from DATE-OBS'. [astropy.wcs.wcs]
+WARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 48796.579167 from DATE-OBS'. [astropy.wcs.wcs]
+PASS: 106 file hashes; 7 epoch records; 3 exact plate IDs; 2 provisional aliases; 2 wrong-epoch matches rejected; native WCS preserved. Scientific review pending.
