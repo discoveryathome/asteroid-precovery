@@ -1,0 +1,25 @@
+{
+  "project": "asteroid-precovery",
+  "date": "2026-10-21",
+  "base_commit": "438be093db77dd3f8ca955775b0f59ee6b742928",
+  "remote_main_at_fetch": "1f92397b2c227ea6fab475af9d20c3f1b3519415",
+  "base_includes_open_launch_pr": "https://github.com/discoveryathome/asteroid-precovery/pull/1",
+  "assessment_scope": "Coordinator code/document review and executed local checks; not an independent cold contributor study or external scientific signoff",
+  "recommendation": "Bounded evidence-collection beta with qualified scientific review",
+  "finding": "The original broad archive assignment remained incomplete despite useful evidence. Ordinary task draws could assign expert scientific review, and the tested second-case evidence lived outside the project.",
+  "changes": [
+    "Imported the existing MS4 rehearsal package with its original 106-file manifest, attribution and scientific nonacceptance record.",
+    "Replaced the broad archive task with one-exposure acquisition, one-alias resolution and one rejected-match audit; narrowed the timing task to one plate discrepancy.",
+    "Added a seeded ordinary picker that excludes expert review unless explicitly opted into; specified technical package completion separately from scientific acceptance.",
+    "Documented wrong-epoch controls, bounded archive fallback and a compact evidence receipt."
+  ],
+  "validation": "Original AN10 offline replay and nine tests passed; MS4 hashes, seven epoch records, three exact IDs, two provisional aliases, two wrong-epoch rejections and native WCS preservation passed; 120 ordinary draws never selected expert review; schema validation passed. Reused the existing pinned Python environment; no cold installation or fresh donor session was measured.",
+  "next_step": "A qualified reviewer should accept or reject one bounded scientific obligation and define how technical packages enter the research workflow. Test cold onboarding on the revised cards.",
+  "external_acceptance_test": "A documented scientific review path, a completed cold task with independently inspectable evidence, and explicit unresolved timing/identity/calibration issues. No automated observation reporting.",
+  "remote_writes": false,
+  "active_task_first_steps": {
+    "checked": 6,
+    "passed": 6,
+    "note": "Asteroid commands used an existing pinned environment instead of a cold install; see command receipts."
+  }
+}

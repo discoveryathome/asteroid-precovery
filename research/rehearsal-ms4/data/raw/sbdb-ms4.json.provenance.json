@@ -1,0 +1,10 @@
+{
+  "path": "data/raw/sbdb-ms4.json",
+  "url": "https://ssd-api.jpl.nasa.gov/sbdb.api?sstr=307261&cov=mat&full-prec=true&discovery=true",
+  "retrieved_at": "2026-10-20T06:28:41.899001+00:00",
+  "sha256": "a11ddc1a1f196141d3b742b617e9dac69de781570551397ea888e4e6e1585df0",
+  "bytes": 4245,
+  "content_type": "application/json",
+  "etag": null,
+  "last_modified": null
+}

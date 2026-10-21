@@ -1,0 +1,36 @@
+{
+  "status": "draft suggestions; not installed into the live catalogue; durations untested",
+  "tasks": [
+    {
+      "id": "ms4-alias-registration",
+      "scope": "Quantify registration of the published 1954 reference image to the frozen XE740 cutout, masking labels and the target.",
+      "suggested_budget_minutes": 30,
+      "inputs": [
+        "data/raw/observer-19540408.gif",
+        "data/raw/XE740.fits"
+      ],
+      "new_output": "Transform, matched stellar/background structure, residual image and limitations; distinguish same sky field from same exposure.",
+      "acceptance": "Reproducible evidence for or against the provisional alias; no timing or source-identity claim."
+    },
+    {
+      "id": "ms4-injection-recovery",
+      "scope": "Measure point-source injection recovery at fixed, recorded background positions in S727, with a predeclared flux grid.",
+      "suggested_budget_minutes": 30,
+      "inputs": [
+        "data/raw/1982-08-09-stsci-blue.fits"
+      ],
+      "new_output": "Seeded injections, recovery curve, false matches and a plot.",
+      "acceptance": "Separate planted positions from real-object testing; no claim of calibrated survey completeness."
+    },
+    {
+      "id": "one-more-documented-control",
+      "scope": "Choose one untriaged linked report, verify the primary observation account, and acquire one exact exposure or document a bounded failed route.",
+      "suggested_budget_minutes": 30,
+      "inputs": [
+        "literature-leads.json"
+      ],
+      "new_output": "One source/plate/provenance card with a small FITS cutout, or a precise blocked handoff.",
+      "acceptance": "An auditable acquisition or useful failure result; measured astrometry and scientific acceptance are separate tasks."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "path": "data/raw/1992-06-23-atlas.xml",
+  "url": "https://irsa.ipac.caltech.edu/cgi-bin/Atlas/nph-atlas?mission=DSS&locstr=253.31979166666667+-11.227277777777777+eq&regSize=0.08&covers=on&mode=PI",
+  "retrieved_at": "2026-10-20T06:31:08.611414+00:00",
+  "sha256": "e2348e08cb9f6d7ecae667b4dc513f63521e15dc978f1c11d017fe00eb9086af",
+  "bytes": 1619,
+  "content_type": "text/xml",
+  "etag": null,
+  "last_modified": null
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "archive_file": "images/dss1red/dss1red_XE740.fits",
+    "headers": {
+      "REGION": "XE740",
+      "PLATEID": "0FGQ",
+      "DATE-OBS": "1954-04-07T09:03:00",
+      "EXPOSURE": 45.0,
+      "PLTLABEL": "E1036",
+      "TELESCOP": "Palomar Schmidt",
+      "NAXIS1": 14000,
+      "NAXIS2": 13999
+    }
+  },
+  {
+    "archive_file": "images/dss1red/dss1red_XE741.fits",
+    "headers": {
+      "REGION": "XE741",
+      "PLATEID": "0FGR",
+      "DATE-OBS": "1955-04-15T07:48:00",
+      "EXPOSURE": 50.0,
+      "PLTLABEL": "E1394",
+      "TELESCOP": "Palomar Schmidt",
+      "NAXIS1": 14000,
+      "NAXIS2": 13999
+    }
+  },
+  {
+    "archive_file": "images/dss2red/dss2red_ER649.fits",
+    "headers": {
+      "REGION": "ER649",
+      "PLATEID": "A2IX",
+      "DATE-OBS": "1995-05-29T12:07:00",
+      "EXPOSURE": 65.0,
+      "PLTLABEL": "OR16628",
+      "TELESCOP": "UK Schmidt - Doubl",
+      "NAXIS1": 23040,
+      "NAXIS2": 23040
+    }
+  },
+  {
+    "archive_file": "images/dss2red/dss2red_ER650.fits",
+    "headers": {
+      "REGION": "ER650",
+      "PLATEID": "A1OO",
+      "DATE-OBS": "1993-05-24T12:44:00",
+      "EXPOSURE": 55.0,
+      "PLTLABEL": "OR15560",
+      "TELESCOP": "UK Schmidt - Doubl",
+      "NAXIS1": 23040,
+      "NAXIS2": 23040
+    }
+  }
+]

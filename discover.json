@@ -69,5 +69,14 @@
   "review": {
     "per_week": "surge",
     "note": "Maintainer of record: @Mister-Meeseeks, from 2026-10-21. A qualified scientific reviewer (astrometry) is still wanted: scientific acceptance of any reduction, and any MPC submission, need that review. Hub listing and repository review don't grant either."
-  }
+  },
+  "picker": {
+    "command": [
+      "python3",
+      "tools/pick_task.py",
+      "--seed",
+      "{seed}"
+    ]
+  },
+  "packages": "research/*/"
 }

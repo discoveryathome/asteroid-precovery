@@ -1,0 +1,80 @@
+[
+  {
+    "task": "one-exposure",
+    "command": [
+      ".venv/bin/python",
+      "research/rehearsal-ms4/verify_package.py"
+    ],
+    "interpreter_substitution": true,
+    "returncode": 0,
+    "seconds": 1.0605796669842675,
+    "output": "PASS: 106 file hashes; 7 epoch records; 3 exact plate IDs; 2 provisional aliases; 2 wrong-epoch matches rejected; native WCS preserved. Scientific review pending.\nWARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 34839.377083 from DATE-OBS'. [astropy.wcs.wcs]\nWARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 35212.325000 from DATE-OBS'. [astropy.wcs.wcs]\nWARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 48796.579167 from DATE-OBS'. [astropy.wcs.wcs]\n"
+  },
+  {
+    "task": "resolve-one-alias",
+    "command": [
+      ".venv/bin/python",
+      "research/rehearsal-ms4/verify_package.py"
+    ],
+    "interpreter_substitution": true,
+    "returncode": 0,
+    "seconds": 1.0605796669842675,
+    "output": "PASS: 106 file hashes; 7 epoch records; 3 exact plate IDs; 2 provisional aliases; 2 wrong-epoch matches rejected; native WCS preserved. Scientific review pending.\nWARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 34839.377083 from DATE-OBS'. [astropy.wcs.wcs]\nWARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 35212.325000 from DATE-OBS'. [astropy.wcs.wcs]\nWARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 48796.579167 from DATE-OBS'. [astropy.wcs.wcs]\n"
+  },
+  {
+    "task": "audit-one-rejected-match",
+    "command": [
+      ".venv/bin/python",
+      "research/rehearsal-ms4/verify_package.py"
+    ],
+    "interpreter_substitution": true,
+    "returncode": 0,
+    "seconds": 1.0605796669842675,
+    "output": "PASS: 106 file hashes; 7 epoch records; 3 exact plate IDs; 2 provisional aliases; 2 wrong-epoch matches rejected; native WCS preserved. Scientific review pending.\nWARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 34839.377083 from DATE-OBS'. [astropy.wcs.wcs]\nWARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 35212.325000 from DATE-OBS'. [astropy.wcs.wcs]\nWARNING: FITSFixedWarning: 'datfix' made the change 'Set MJD-OBS to 48796.579167 from DATE-OBS'. [astropy.wcs.wcs]\n"
+  },
+  {
+    "task": "one-plate-time-audit",
+    "command": [
+      "env",
+      "PYTHONPATH=src",
+      ".venv/bin/python",
+      "-m",
+      "precovery.tasks",
+      "astrometry"
+    ],
+    "interpreter_substitution": true,
+    "returncode": 0,
+    "seconds": 1.1412162909982726,
+    "output": "{\n  \"XE036\": {\n    \"inliers\": 47,\n    \"loo_rms_per_axis_arcsec\": 0.09710133936825478\n  },\n  \"XO036\": {\n    \"inliers\": 47,\n    \"loo_rms_per_axis_arcsec\": 0.14129434301017774\n  }\n}\nInspect data/controls.json time_override and data/derived/reference-comparison.json\n"
+  },
+  {
+    "task": "correlated-noise-and-trails",
+    "command": [
+      "env",
+      "PYTHONPATH=src",
+      ".venv/bin/python",
+      "-m",
+      "precovery.tasks",
+      "pipeline"
+    ],
+    "interpreter_substitution": true,
+    "returncode": 0,
+    "seconds": 1.9956565420143306,
+    "output": "PASS: immutable inputs, published endpoint transcription, image IDs and time overrides verified\n"
+  },
+  {
+    "task": "independent-evidence-review",
+    "command": [
+      "env",
+      "PYTHONPATH=src",
+      ".venv/bin/python",
+      "-m",
+      "precovery.tasks",
+      "review"
+    ],
+    "interpreter_substitution": true,
+    "returncode": 0,
+    "seconds": 0.7863563330611214,
+    "output": "{\n  \"status\": \"pending-independent-scientific-review\",\n  \"open_obligations\": 9,\n  \"reviewer\": null\n}\n"
+  }
+]

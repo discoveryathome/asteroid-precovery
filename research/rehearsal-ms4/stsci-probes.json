@@ -1,0 +1,46 @@
+[
+  {
+    "date": "1982-08-09",
+    "expected_region": "S727",
+    "expected_plate_id": "044C",
+    "region": "S727",
+    "plate_id": "044C",
+    "date_obs": "1982-08-09T09:11",
+    "exposure": 60.0,
+    "file": "data/raw/1982-08-09-stsci-blue.fits",
+    "plate_id_matches": true
+  },
+  {
+    "date": "1983-06-14",
+    "expected_region": "S728",
+    "expected_plate_id": "00TR",
+    "region": "S728",
+    "plate_id": "00TR",
+    "date_obs": "1983-06-14T13:03",
+    "exposure": 60.0,
+    "file": "data/raw/1983-06-14-stsci-blue.fits",
+    "plate_id_matches": true
+  },
+  {
+    "date": "1983-07-01",
+    "expected_region": "S656",
+    "expected_plate_id": "02C3",
+    "region": "S728",
+    "plate_id": "00TR",
+    "date_obs": "1983-06-14T13:03",
+    "exposure": 60.0,
+    "file": "data/raw/1983-07-01-stsci-blue.fits",
+    "plate_id_matches": false
+  },
+  {
+    "date": "1983-07-10",
+    "expected_region": "S655",
+    "expected_plate_id": "03YK",
+    "region": "S728",
+    "plate_id": "00TR",
+    "date_obs": "1983-06-14T13:03",
+    "exposure": 60.0,
+    "file": "data/raw/1983-07-10-stsci-blue.fits",
+    "plate_id_matches": false
+  }
+]

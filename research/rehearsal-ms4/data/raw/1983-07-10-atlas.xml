@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<result status="ok">
+  <description>
+     <collection>DSS</collection>
+     <ra>243.699750</ra>
+     <dec>-12.228890</dec>
+     <regSize>0.250000</regSize>
+     <radius>0.040000</radius>
+     <radunits>degrees</radunits>
+  </description>
+  <coverageMap>
+    <resultHtml>
+       https://irsa.ipac.caltech.edu:443/workspace/TMP_suKJoZ_2650730/Atlas/243.69975000000005_-12.22888888888889_eq_2650730.v0001/index.html
+    </resultHtml>
+    <resultMap>
+       https://irsa.ipac.caltech.edu:443/workspace/TMP_suKJoZ_2650730/Atlas/243.69975000000005_-12.22888888888889_eq_2650730.v0001/region.jpg
+    </resultMap>
+    <resultFits>
+       https://irsa.ipac.caltech.edu:443/workspace/TMP_suKJoZ_2650730/Atlas/243.69975000000005_-12.22888888888889_eq_2650730.v0001/background_IRAS_ISSA_12micron.fits
+    </resultFits>
+  </coverageMap>
+  <summary>
+     <counts>
+        <imagesN> 5 </imagesN>
+        <sourcesN> 0 </sourcesN>
+        <spectraN> 0 </spectraN>
+     </counts>
+     <downloadScript>
+        https://irsa.ipac.caltech.edu:443/workspace/TMP_suKJoZ_2650730/Atlas/243.69975000000005_-12.22888888888889_eq_2650730.v0001/wget_data.bat
+     </downloadScript>
+  </summary>
+  <images>
+      <counts>5</counts>
+     <metadata>
+        https://irsa.ipac.caltech.edu:443/workspace/TMP_suKJoZ_2650730/Atlas/243.69975000000005_-12.22888888888889_eq_2650730.v0001/images.tbl
+     </metadata>
+     <metadataVOtable>
+        https://irsa.ipac.caltech.edu:443/workspace/TMP_suKJoZ_2650730/Atlas/243.69975000000005_-12.22888888888889_eq_2650730.v0001/images.xml
+     </metadataVOtable>
+  </images>
+</result>
+

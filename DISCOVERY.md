@@ -1,5 +1,7 @@
 # Research question
 
+Current contributor instructions: [CONTRIBUTOR_WORKFLOW.md](CONTRIBUTOR_WORKFLOW.md) (21 October 2026).
+
 Can a bounded, reproducible archive-to-evidence workflow recover documented pre-discovery asteroid trails, reject specified false matches, and retain enough timing, calibration and provenance evidence for an independent scientific reviewer?
 
 The initial setting is one asteroid, two photographic exposures, four published trail-end observations, and four negative controls. It is a small engineering/scientific replication, not a survey completeness or false-discovery-rate measurement. A precovery is an observation made before recognized discovery and identified retrospectively.
@@ -22,7 +24,8 @@ The principal bottleneck is scientific review: inconsistent plate timestamps, ph
 
 ## Tracks
 
-The catalogue has archive searches (30), astrometric verification (30), image-pipeline improvements (20) and expert review (20), totaling 100. All begin with a cheap executable check against the frozen case. Search tasks prioritize public single exposures, exact image identity, complete motion/uncertainty coverage and bounded cutouts. Archive responses can be useful even when they expose wrong epochs or missing coverage.
+The catalogue has archive searches (45), astrometric verification (25), image-pipeline improvements (20) and expert review (10), totaling 100 for qualified reviewers. The ordinary picker excludes expert review
+and draws proportionally among the other tracks. All begin with a cheap executable check against the frozen case. Search tasks prioritize public single exposures, exact image identity, complete motion/uncertainty coverage and bounded cutouts. Archive responses can be useful even when they expose wrong epochs or missing coverage.
 
 ## Settled questions and avoided dead ends
 

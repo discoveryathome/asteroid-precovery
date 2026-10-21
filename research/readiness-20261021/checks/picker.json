@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "draws": 120,
+  "tasks_seen": [
+    "audit-one-rejected-match",
+    "correlated-noise-and-trails",
+    "one-exposure",
+    "one-plate-time-audit",
+    "resolve-one-alias"
+  ],
+  "tracks_seen": [
+    "archive-searches",
+    "astrometric-verification",
+    "image-pipeline-improvements"
+  ],
+  "deterministic_replay": true,
+  "bad_seed_rejected": true,
+  "messages_sent": false
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/data/DSS/images/dss1red/dss1red_XE741.fits",
+  "retrieved_at": "2026-10-20T06:27:42.218644+00:00",
+  "sha256": "e57caacc76fac1c0033d3f5dd5281f46ee52605ab669aac1a4ab2eafb117666f",
+  "range": [
+    0,
+    28799
+  ],
+  "response_headers": {
+    "Server": "nginx",
+    "Date": "Tue, 20 Oct 2026 06:27:42 GMT",
+    "Content-Type": "image/x-fits",
+    "Content-Length": "28800",
+    "Connection": "keep-alive",
+    "Last-Modified": "Sat, 22 Nov 2008 01:53:23 GMT",
+    "Accept-Ranges": "bytes",
+    "Content-Range": "bytes 0-28799/391985280"
+  }
+}

@@ -12,3 +12,10 @@ External content is not relicensed:
 - Discovery@Home protocol/schema snapshots and the hash-verified helper retain their upstream notices. The helper is not committed as project code.
 
 No assertion of permission to republish third-party figures is made. The evidence plot is generated from the credited FITS data and includes no copied paper figure.
+
+## Imported MS4 rehearsal
+
+`research/rehearsal-ms4/` preserves the existing rehearsal package and its original
+manifest. Source URLs, observer-image credits and acquisition provenance are in
+that package's README and per-file metadata. External materials retain their
+original rights; this import grants no additional rights or scientific acceptance.

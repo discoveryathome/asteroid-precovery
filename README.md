@@ -1,5 +1,7 @@
 # Asteroid precovery — Discovery@Home research pilot
 
+Current contributor instructions: [CONTRIBUTOR_WORKFLOW.md](CONTRIBUTOR_WORKFLOW.md) (21 October 2026).
+
 This pilot reproduces **1999 AN10 on two Palomar plates from January 26, 1955**, using public archival FITS pixels, frozen JPL predictions and a Gaia DR3 calibration subset. Both trails pass the replication screen; four negative controls fail. **No new observation is claimed, accepted, announced or submitted.** The maintainer of record is @Mister-Meeseeks (from 2026-10-21); scientific review by a qualified astrometrist remains unassigned.
 
 The documented precedent is [MPEC 1999-N21](https://www.minorplanetcenter.net/iau/mpec/J99/J99N21.html), supported by [NASA/JPL's contemporary account](https://cneos.jpl.nasa.gov/news/news018a.html). It reports four trail ends from two exposures. The pilot measures exposure midpoints; it does not count trail ends as independent images.

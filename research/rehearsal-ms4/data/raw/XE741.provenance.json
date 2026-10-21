@@ -1,0 +1,28 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/data/DSS/images/dss1red/dss1red_XE741.fits",
+  "retrieved_at": "2026-10-20T06:28:23.893419+00:00",
+  "parent_bytes": 391985280,
+  "parent_checksum": null,
+  "parent_checksum_reason": "Full plate intentionally not downloaded",
+  "header_range": [
+    0,
+    28799
+  ],
+  "header_range_sha256": "e57caacc76fac1c0033d3f5dd5281f46ee52605ab669aac1a4ab2eafb117666f",
+  "pixel_range": [
+    135307520,
+    139591519
+  ],
+  "pixel_range_sha256": "4d1b6a7c3095777ab00570c29606aa0731d0adf12a2e6427a32a8d7c0f64612e",
+  "pixel_bounds_zero_based": [
+    13215,
+    13368,
+    4832,
+    4985
+  ],
+  "cutout_size_arcmin": 4.25,
+  "native_pixels": true,
+  "etag": null,
+  "last_modified": "Sat, 22 Nov 2008 01:53:23 GMT",
+  "sha256": "cafb894fd1ab773621c5f3f6b1afe16445d844b126673fd732c8404699e12c61"
+}

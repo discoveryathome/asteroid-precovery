@@ -1,0 +1,10 @@
+{
+  "path": "data/raw/1983-07-10-stsci-blue.fits",
+  "url": "https://archive.stsci.edu/cgi-bin/dss_search?v=poss2ukstu_blue&r=243.69975000000005&d=-12.22888888888889&e=J2000&h=4.25&w=4.25&f=fits&c=none",
+  "retrieved_at": "2026-10-20T06:31:51.318099+00:00",
+  "sha256": "3cfe5e717f7606f53de77e52fa79e91cc5a9cf09f6ff594a28487548bf31fe15",
+  "bytes": 103680,
+  "content_type": "image/x-fits",
+  "etag": null,
+  "last_modified": null
+}
