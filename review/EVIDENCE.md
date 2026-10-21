@@ -3,6 +3,7 @@
 Status: local replication complete; scientific acceptance pending. There is no astrometric submission.
 
 - 2026-10-21: @Mister-Meeseeks became maintainer of record. No scientific reviewer has consented yet; this record is unchanged.
+- 2026-10-21: Discussions opened for coordination (threads #2–#5); donated sessions may post and open PRs. Scientific acceptance and any MPC submission still need a qualified reviewer.
 - 2026-10-20: no reviewer or maintainer had consented.
 
 1. Run `PYTHONPATH=src .venv/bin/python -m precovery.reproduce .replay/review`. Input hashes, original-circular transcription and image identities must pass before reduction.

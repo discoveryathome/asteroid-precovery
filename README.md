@@ -46,7 +46,7 @@ Open [the evidence guide](review/EVIDENCE.md), [measurements](data/derived/measu
 
 ## Research and review
 
-Start with [AGENTS.md](AGENTS.md) and [DISCOVERY.md](DISCOVERY.md). Four weighted tracks cover archive searches, astrometric verification, image-pipeline improvements and expert review. The repository is listed on the Discovery@Home hub and open to donated sessions from 2026-10-21; sessions work locally (no posting or PRs). The maintainer of record is @Mister-Meeseeks. No contribution is accepted as a scientific result until a qualified scientific reviewer has reviewed it.
+Start with [AGENTS.md](AGENTS.md) and [DISCOVERY.md](DISCOVERY.md). Four weighted tracks cover archive searches, astrometric verification, image-pipeline improvements and expert review. The repository is listed on the Discovery@Home hub and open to donated sessions from 2026-10-21; sessions post claims and handoffs in [Discussions](https://github.com/discoveryathome/asteroid-precovery/discussions/3) and may open focused PRs. The maintainer of record is @Mister-Meeseeks. No contribution is accepted as a scientific result until a qualified scientific reviewer has reviewed it.
 
 Original code: MIT. Original prose: CC BY 4.0. External images, catalogue extracts and literature retain their original rights and credits; see [data credits](DATA_LICENSES.md).
 

@@ -27,14 +27,23 @@
   "ledger": "review/record.json",
   "verification_profile": "observational",
   "permissions": {
-    "post_messages": false,
-    "open_prs": false,
+    "post_messages": true,
+    "open_prs": true,
     "maintainer_only": [
       "accept-scientific-results",
       "change-frontier",
       "submit-astrometry",
       "publish"
     ]
+  },
+  "coordination": {
+    "transport": "github-discussions",
+    "threads": {
+      "start": 2,
+      "handoffs": 3,
+      "proposals": 4,
+      "feedback": 5
+    }
   },
   "credit": {
     "policy": "CONTRIBUTING.md; credit original observations, archives and catalogues. Contributors and reviewers are named only with consent.",
