@@ -10,7 +10,8 @@
   "license": "MIT",
   "maintainers": [
     {
-      "name": "UNASSIGNED (vacant role; no consenting maintainer)"
+      "name": "Doug Colkitt",
+      "github": "Mister-Meeseeks"
     }
   ],
   "canonical_repo": "https://github.com/discoveryathome/asteroid-precovery",
@@ -57,7 +58,7 @@
     "note": "Python 3.14 tested; no GPU; pinned wheels; offline astronomical verification after installation."
   },
   "review": {
-    "paused": true,
-    "note": "Public research proposal, paused to donated sessions. No scientific maintainer has consented and weekly review capacity is unassigned. Hub listing consent does not authorize scientific acceptance or contributor traffic. Placeholder maintainer entry is a vacant role required by v0 schema, not a person."
+    "per_week": "surge",
+    "note": "Maintainer of record: @Mister-Meeseeks, from 2026-10-21. A qualified scientific reviewer (astrometry) is still wanted: scientific acceptance of any reduction, and any MPC submission, need that review. Hub listing and repository review don't grant either."
   }
 }

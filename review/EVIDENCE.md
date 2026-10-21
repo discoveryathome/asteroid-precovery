@@ -1,6 +1,9 @@
 # Independent review guide
 
-Status: local replication complete; scientific acceptance pending. No reviewer or maintainer has consented. There is no astrometric submission.
+Status: local replication complete; scientific acceptance pending. There is no astrometric submission.
+
+- 2026-10-21: @Mister-Meeseeks became maintainer of record. No scientific reviewer has consented yet; this record is unchanged.
+- 2026-10-20: no reviewer or maintainer had consented.
 
 1. Run `PYTHONPATH=src .venv/bin/python -m precovery.reproduce .replay/review`. Input hashes, original-circular transcription and image identities must pass before reduction.
 2. Compare the two raw native FITS cutouts and original headers with their source URLs and byte-range provenance. The tests compare their overlapping pixels to independently retrieved IRSA service cutouts exactly. Inspect `research/sources/irsa-images.tbl` for coverage and plate alternatives.

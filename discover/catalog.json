@@ -3,7 +3,7 @@
   "priority_revision": 1,
   "assessed_on": "2026-10-20",
   "priority_log": "discover/priority-log.md",
-  "status": "LOCAL; paused pending consenting maintainer",
+  "status": "Open to donated sessions from 2026-10-21 (sessions are local: no posting or PRs); scientific review still wanted",
   "tracks": [
     {
       "id": "archive-searches",
