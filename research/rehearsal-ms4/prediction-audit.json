@@ -1,0 +1,58 @@
+[
+  {
+    "case": "1954",
+    "prediction_time_horizons_UT1": "1954-Apr-08 09:00:30",
+    "predicted_radec_deg": [
+      213.913758848,
+      -13.664335271
+    ],
+    "published_position_radec_deg": [
+      213.91395833333334,
+      -13.664583333333333
+    ],
+    "published_minus_prediction_distance_arcsec": 1.1333343509208547,
+    "not_an_independent_image_measurement": true,
+    "sky_motion_arcsec_hour": [
+      -2.5006,
+      1.010372
+    ],
+    "expected_motion_during_exposure_arcsec": 2.022755970289298,
+    "ellipse_3sigma_arcsec": [
+      2.651,
+      0.048
+    ],
+    "ellipse_theta_deg": -1.051,
+    "pixel_xy": [
+      77.32771811027719,
+      77.06482324921849
+    ]
+  },
+  {
+    "case": "1955",
+    "prediction_time_horizons_UT1": "1955-Apr-16 07:54",
+    "predicted_radec_deg": [
+      214.902515067,
+      -13.63962098
+    ],
+    "published_position_radec_deg": [
+      214.90266666666665,
+      -13.639638888888888
+    ],
+    "published_minus_prediction_distance_arcsec": 0.5342716698979411,
+    "not_an_independent_image_measurement": true,
+    "sky_motion_arcsec_hour": [
+      -2.58625,
+      1.03141
+    ],
+    "expected_motion_during_exposure_arcsec": 2.3202753145131054,
+    "ellipse_3sigma_arcsec": [
+      2.574,
+      0.048
+    ],
+    "ellipse_theta_deg": -0.851,
+    "pixel_xy": [
+      76.83974813617884,
+      76.64361566409728
+    ]
+  }
+]

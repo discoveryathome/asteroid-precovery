@@ -1,0 +1,17 @@
+{
+  "status": "candidate-control-acquisition-awaiting-independent-review",
+  "scientifically_accepted": false,
+  "submission_allowed": false,
+  "reviewer": null,
+  "new_arc_extension_days": 0,
+  "orbital_uncertainty_improvement": null,
+  "open_obligations": [
+    "Independently confirm se0741\u2192XE740 and se0742\u2192XE741 using archive records or pixel-level registration; current evidence is visual field agreement and exposure duration.",
+    "Resolve date and time convention discrepancies for all selected exposures; do not tune time to an ephemeris.",
+    "Acquire exact S656/02C3 and S655/03YK exposures; returned default S728 frames are explicit wrong-epoch negatives.",
+    "Freeze a suitable reference catalogue for each field and independently measure the object with a model appropriate for approximately point-like sources.",
+    "Evaluate stationary sources, image artifacts, blends and uncertainty calibration before promoting any case into the baseline control suite.",
+    "Current JPL orbit includes these historical observations: positional agreement is circular consistency, not independent validation."
+  ],
+  "catalogue_task_status": "partial: second documented case and five cutouts acquired; complete exposure identity/timing audit remains open"
+}

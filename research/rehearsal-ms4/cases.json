@@ -1,0 +1,26 @@
+{
+  "object": "307261 (2002 MS4)",
+  "source": "https://andrew-lowe.ca/2002ms4.htm",
+  "cases": [
+    {
+      "id": "1954",
+      "date": "1954-04-08",
+      "published_fractional_day": 8.37535,
+      "ra_deg": 213.91395833333334,
+      "dec_deg": -13.664583333333333,
+      "published_plate": "se0741",
+      "exposure_minutes": 45
+    },
+    {
+      "id": "1955",
+      "date": "1955-04-16",
+      "published_fractional_day": 16.32917,
+      "ra_deg": 214.90266666666665,
+      "dec_deg": -13.639638888888888,
+      "published_plate": "se0742",
+      "exposure_minutes": 50
+    }
+  ],
+  "timing_warning": "Observer labels dates UTC; historical UT1 convention and exact header timing require independent review.",
+  "scientifically_accepted": false
+}

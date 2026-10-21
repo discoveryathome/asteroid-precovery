@@ -1,0 +1,12 @@
+{
+  "schema": "local-rehearsal-task/v1",
+  "task": "archive-overlap-audit",
+  "scope": "307261 (2002 MS4): verify a documented second control and recover exact historical DSS exposure cutouts",
+  "baseline": "be243bd145f82f4f17c962afecc51461d1308626",
+  "overlap_check": "No local existing MS4 case or handoff; no external coordination configured or attempted",
+  "acceptance": "Primary observer citation, exact exposure identity, immutable cutout and metadata hashes. No detection acceptance from coverage.",
+  "stop_at": "2026-10-20T06:51:47Z",
+  "review_status": "pending",
+  "scientifically_accepted": false,
+  "submission_allowed": false
+}

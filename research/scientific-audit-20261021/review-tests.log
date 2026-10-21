@@ -1,0 +1,10 @@
+test_changed_evidence (test_review_package.ReviewTests.test_changed_evidence) ... ok
+test_no_anonymous_decision (test_review_package.ReviewTests.test_no_anonymous_decision) ... ok
+test_no_automatic_acceptance (test_review_package.ReviewTests.test_no_automatic_acceptance) ... ok
+test_no_silent_time_adjustment (test_review_package.ReviewTests.test_no_silent_time_adjustment) ... ok
+test_pending_is_technical_only (test_review_package.ReviewTests.test_pending_is_technical_only) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.011s
+
+OK

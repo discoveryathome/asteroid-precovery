@@ -1,0 +1,14 @@
+{
+  "object": "307261 (2002 MS4)",
+  "orbit_id": "25",
+  "solution_date": "2026-03-14 07:51:28",
+  "planet_ephemeris": "DE441",
+  "small_body_ephemeris": "SB441-N16",
+  "sbdb_elements_epoch_tdb_jd": "2461200.5",
+  "covariance_epoch_tdb_jd": "2458378.5",
+  "horizons_osculating_epoch_tdb_jd": "2458378.5",
+  "orbit_includes_historical_observations": true,
+  "first_observation": "1954-04-08",
+  "new_reference_catalogue": null,
+  "catalogue_reason": "No new image astrometry or star calibration performed. Baseline Gaia DR3 subset covers a different object/field and is not reused here."
+}

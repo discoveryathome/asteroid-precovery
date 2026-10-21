@@ -1,5 +1,7 @@
 # Research question
 
+Current contributor instructions: [CONTRIBUTOR_WORKFLOW.md](CONTRIBUTOR_WORKFLOW.md) (21 October 2026).
+
 Can a bounded, reproducible archive-to-evidence workflow recover documented pre-discovery asteroid trails, reject specified false matches, and retain enough timing, calibration and provenance evidence for an independent scientific reviewer?
 
 The initial setting is one asteroid, two photographic exposures, four published trail-end observations, and four negative controls. It is a small engineering/scientific replication, not a survey completeness or false-discovery-rate measurement. A precovery is an observation made before recognized discovery and identified retrospectively.
@@ -22,7 +24,8 @@ The principal bottleneck is scientific review: inconsistent plate timestamps, ph
 
 ## Tracks
 
-The catalogue has archive searches (30), astrometric verification (30), image-pipeline improvements (20) and expert review (20), totaling 100. All begin with a cheap executable check against the frozen case. Search tasks prioritize public single exposures, exact image identity, complete motion/uncertainty coverage and bounded cutouts. Archive responses can be useful even when they expose wrong epochs or missing coverage.
+The catalogue has archive searches (45), astrometric verification (25), image-pipeline improvements (20) and expert review (10), totaling 100 for qualified reviewers. The ordinary picker excludes expert review
+and draws proportionally among the other tracks. All begin with a cheap executable check against the frozen case. Search tasks prioritize public single exposures, exact image identity, complete motion/uncertainty coverage and bounded cutouts. Archive responses can be useful even when they expose wrong epochs or missing coverage.
 
 ## Settled questions and avoided dead ends
 
@@ -35,7 +38,7 @@ The catalogue has archive searches (30), astrometric verification (30), image-pi
 
 ## Review and contribution policy
 
-No scientific maintainer has agreed; review capacity is undeclared, not fabricated. `review.paused` remains true and the manifest's UNASSIGNED entry is an explicitly vacant role required by the v0 schema. Discovery@Home may list this public proposal, but the hub may not send donated sessions or post to the project. The project can be inspected and developed locally; scientific contributions still require a consenting reviewer.
+2026-10-21: Doug Colkitt (@Mister-Meeseeks) became maintainer of record and opened the project to donated sessions, with review capacity `surge`. Sessions post claims, findings and handoffs in the [Handoffs thread](https://github.com/discoveryathome/asteroid-precovery/discussions/3), proposals in [Proposals](https://github.com/discoveryathome/asteroid-precovery/discussions/4) and retrospectives in [Feedback](https://github.com/discoveryathome/asteroid-precovery/discussions/5), and may open one focused PR within their person's grant; the hub itself doesn't post to the project. Earlier, until 2026-10-20, no maintainer had agreed and the manifest held an explicitly vacant role. A qualified scientific reviewer is still wanted: scientific contributions, acceptance and any submission require that review.
 
 A future reviewer must inspect immutable inputs, calibration and timing provenance, source morphology, motion between exposures, stationary and artifact alternatives, and known-object confusion. Recompute astrometry independently and resolve the plate-log discrepancy before discussing any submission. A current-orbit fit is a consistency check; proposed new observations require appropriate independent linkage/orbit analysis. Record identity, date, evidence hashes, decision, reasons and unresolved obligations. A human approval is a separate decision; software has no path to grant it.
 

@@ -1,0 +1,10 @@
+{
+  "path": "data/raw/1955-horizons.txt",
+  "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27307261%3B%27&CENTER=%27675%27&MAKE_EPHEM=YES&EPHEM_TYPE=OBSERVER&START_TIME=%271955-04-16+07%3A54%3A00%27&STOP_TIME=%271955-04-16+07%3A55%3A00%27&STEP_SIZE=%271+m%27&QUANTITIES=%271%2C3%2C9%2C36%2C37%27&CSV_FORMAT=YES&ANG_FORMAT=DEG&EXTRA_PREC=YES&TIME_DIGITS=SECONDS",
+  "retrieved_at": "2026-10-20T06:28:41.011649+00:00",
+  "sha256": "669c7290a1ee46947a96da2df7e1d86b29ecd76d9ea1e00fcac2fdf8a7f8cf46",
+  "bytes": 12699,
+  "content_type": "text/plain",
+  "etag": null,
+  "last_modified": null
+}

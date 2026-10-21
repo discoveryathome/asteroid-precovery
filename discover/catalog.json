@@ -1,39 +1,34 @@
 {
   "schema": "discover-catalog/v0",
-  "priority_revision": 1,
-  "assessed_on": "2026-10-20",
+  "priority_revision": 2,
+  "assessed_on": "2026-10-21",
   "priority_log": "discover/priority-log.md",
-  "status": "LOCAL; paused pending consenting maintainer",
+  "status": "Open; bounded evidence tasks; scientific acceptance requires a qualified reviewer. Discussion/PR permissions follow the contributor grant.",
   "tracks": [
     {
       "id": "archive-searches",
-      "weight": 30,
-      "useful_outcome": "Find a second independently documented public precovery case and identify all overlapping single exposures.",
+      "weight": 45,
+      "useful_outcome": "One reviewable exposure package, documented mismatch, or source-backed identifier resolution.",
       "tasks": [
         {
-          "id": "archive-overlap-audit",
-          "question": "Find a second independently documented public precovery case and identify all overlapping single exposures.",
+          "id": "one-exposure",
+          "question": "Acquire one documented historical exposure or record a precise failed route.",
           "starting_points": [
-            "research/sources/irsa-images.tbl",
-            "research/BRIEF.md"
+            "research/rehearsal-ms4/literature-leads.json",
+            "CONTRIBUTOR_WORKFLOW.md"
           ],
           "methods": [
             "Use MOST or SSOIS for bounded moving-object searches; use IRSA Atlas for DSS.",
             "Check exact image IDs, epochs, access rights and uncertainty-expanded motion coverage before downloading."
           ],
-          "acceptance_gate": "A documented positive-control citation, exact exposure identity, immutable cutout and metadata with hashes; no new-claim acceptance from a footprint.",
+          "acceptance_gate": "One bounded evidence package with source citation, requested/returned exposure identity, raw headers, file hashes, exact method and unresolved issues. Mark technical checks separately from qualified scientific acceptance. Repeating the known control is onboarding, not discovery.",
           "first_step": {
             "command": [
-              "env",
-              "PYTHONPATH=src",
               ".venv/bin/python",
-              "-m",
-              "precovery.tasks",
-              "archive"
+              "research/rehearsal-ms4/verify_package.py"
             ],
-            "expected": "12 coverage rows and two target plates are listed.",
-            "inspect": "research/sources/irsa-images.tbl",
-            "scope": "Run with PYTHONPATH=src from the project root; read-only baseline check."
+            "expected": "PASS: 106 file hashes",
+            "scope": "Offline second-case control; no detection or scientific-acceptance verdict."
           },
           "bottleneck_link": "DISCOVERY.md#bottleneck",
           "claim_kind": [
@@ -42,18 +37,79 @@
           ],
           "scope_change_triggers": [
             "Any proposed new astrometric claim or external publication requires scientific review and authorization."
-          ]
+          ],
+          "first_experiment": "Select one untriaged primary report, verify its observation citation, then retrieve one exact exposure. Check plate ID, epoch, cutout footprint and hashes; stop after 20 minutes and package success or a reproducible blocked route."
+        },
+        {
+          "id": "resolve-one-alias",
+          "question": "Resolve one provisional plate alias with documentary or registration evidence.",
+          "starting_points": [
+            "research/rehearsal-ms4/exposure-inventory.json",
+            "CONTRIBUTOR_WORKFLOW.md"
+          ],
+          "methods": [
+            "Use MOST or SSOIS for bounded moving-object searches; use IRSA Atlas for DSS.",
+            "Check exact image IDs, epochs, access rights and uncertainty-expanded motion coverage before downloading."
+          ],
+          "acceptance_gate": "One bounded evidence package with source citation, requested/returned exposure identity, raw headers, file hashes, exact method and unresolved issues. Mark technical checks separately from qualified scientific acceptance. Repeating the known control is onboarding, not discovery.",
+          "first_step": {
+            "command": [
+              ".venv/bin/python",
+              "research/rehearsal-ms4/verify_package.py"
+            ],
+            "expected": "PASS: 106 file hashes",
+            "scope": "Offline second-case control; no detection or scientific-acceptance verdict."
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck",
+          "claim_kind": [
+            "observational",
+            "measured"
+          ],
+          "scope_change_triggers": [
+            "Any proposed new astrometric claim or external publication requires scientific review and authorization."
+          ],
+          "first_experiment": "Choose one of the 1954/1955 provisional aliases. Compare original headers and the observer image with target and annotations masked. Report transform, matched background features and residuals; a matching sky field alone does not prove exposure identity."
+        },
+        {
+          "id": "audit-one-rejected-match",
+          "question": "Independently explain one recorded wrong-epoch archive response.",
+          "starting_points": [
+            "research/rehearsal-ms4/stsci-probes.json",
+            "CONTRIBUTOR_WORKFLOW.md"
+          ],
+          "methods": [
+            "Use MOST or SSOIS for bounded moving-object searches; use IRSA Atlas for DSS.",
+            "Check exact image IDs, epochs, access rights and uncertainty-expanded motion coverage before downloading."
+          ],
+          "acceptance_gate": "One bounded evidence package with source citation, requested/returned exposure identity, raw headers, file hashes, exact method and unresolved issues. Mark technical checks separately from qualified scientific acceptance. Repeating the known control is onboarding, not discovery.",
+          "first_step": {
+            "command": [
+              ".venv/bin/python",
+              "research/rehearsal-ms4/verify_package.py"
+            ],
+            "expected": "PASS: 106 file hashes",
+            "scope": "Offline second-case control; no detection or scientific-acceptance verdict."
+          },
+          "bottleneck_link": "DISCOVERY.md#bottleneck",
+          "claim_kind": [
+            "observational",
+            "measured"
+          ],
+          "scope_change_triggers": [
+            "Any proposed new astrometric claim or external publication requires scientific review and authorization."
+          ],
+          "first_experiment": "Choose one wrong-default-exposure record. Reconcile requested and returned identifiers and dates, and produce a minimal repeatable identity check. An already recorded mismatch is a control, not a new discovery; useful new work is an independent check or reusable regression."
         }
       ]
     },
     {
       "id": "astrometric-verification",
-      "weight": 30,
+      "weight": 25,
       "useful_outcome": "Can the published time override and local astrometric uncertainties be independently justified?",
       "tasks": [
         {
-          "id": "plate-time-and-calibration",
-          "question": "Can the published time override and local astrometric uncertainties be independently justified?",
+          "id": "one-plate-time-audit",
+          "question": "Can one plate timestamp conflict be resolved against its primary published or archive record?",
           "starting_points": [
             "data/controls.json",
             "research/BRIEF.md"
@@ -62,7 +118,7 @@
             "Inspect published trail-end times and original plate logs.",
             "Repeat calibration independently, propagate Gaia proper motions and combine timing/centroid/systematic uncertainties."
           ],
-          "acceptance_gate": "Resolve the timestamp conflict with documentary evidence; independent measurements and stated uncertainty budget, without tuning time to residual.",
+          "acceptance_gate": "A bounded documentary audit for one exposure with citations and explicit unresolved issues. Scientific interpretation requires qualified review.",
           "first_step": {
             "command": [
               "env",
@@ -83,7 +139,8 @@
           ],
           "scope_change_triggers": [
             "Any proposed new astrometric claim or external publication requires scientific review and authorization."
-          ]
+          ],
+          "first_experiment": "Choose XE036 or XO036. Make a source-cited table of header time, published endpoint times and stated time scales. Resolve one discrepancy or identify the precise missing plate-log evidence. Do not tune any time override."
         }
       ]
     },
@@ -130,12 +187,12 @@
     },
     {
       "id": "expert-review",
-      "weight": 20,
+      "weight": 10,
       "useful_outcome": "Can an independent astrometrist validate this evidence package and identify the remaining reporting obligations?",
       "tasks": [
         {
           "id": "independent-evidence-review",
-          "question": "Can an independent astrometrist validate this evidence package and identify the remaining reporting obligations?",
+          "question": "Qualified reviewer only: independently assess one named timing, calibration or identity obligation.",
           "starting_points": [
             "review/EVIDENCE.md",
             "research/BRIEF.md"
@@ -165,7 +222,8 @@
           ],
           "scope_change_triggers": [
             "Any proposed new astrometric claim or external publication requires scientific review and authorization."
-          ]
+          ],
+          "first_experiment": "Select one open obligation and record scope, evidence and reasoned decision. Ordinary donors should use the default picker, which excludes this track; qualified reviewers may opt in with --expert."
         }
       ]
     }

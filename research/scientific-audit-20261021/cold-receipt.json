@@ -1,0 +1,86 @@
+{
+  "mode": "coordinator-run fresh virtual environment in existing worktree; not independent donor onboarding",
+  "python": "Python 3.14.6",
+  "requirements_sha256": "0a64bf93f6a99d51e8e72d49a8b999ed09804b2eb708e3122f36e8587e3cee5a",
+  "dependency_install": "uv pip install -r requirements.lock; fresh venv, normal package cache allowed",
+  "unit_tests_passed": 9,
+  "positive_exposures": 2,
+  "negative_controls_rejected": 4,
+  "ms4_package_verifier": "PASS; see cold-package.log",
+  "scientific_review": "pending-qualified-reviewer; confirmed by owner on 2026-10-21",
+  "files": [
+    {
+      "path": "an10-blue-1955.fits",
+      "sha256": "d6a184e88606f11ba3641ebcf0ccc5cf71f661378679cfa627d29bdbdd047cc5",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "an10-red-1955.fits",
+      "sha256": "a66817e94512e9b3e5dfcdb6ab3ed8ddb6c448334a8ad9db5ccdd1e05915f51f",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "calibration.json",
+      "sha256": "00e96b4966b55636ce5184efa0f702475ee204e77e11117f52ea028a94b606ff",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "evidence.png",
+      "sha256": "580ce472db99b8c87833e1c931367d58ebc17cef32612aa263a64ed9772e33fb",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "measurements.json",
+      "sha256": "09acf308655858c1b376ff16279d8a62c67571f5bf9deec8723c527b67bdc1c6",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "metrics.json",
+      "sha256": "c90230049878a0e9c4ed6d0c6b7d4a2b5ffdd1ab303b9cf3041e126c674d9c59",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "pair-motion.json",
+      "sha256": "95a4a2c027b6dc5a316fd2f203cd4d28008885f5164d8308cf731f5c834c9d1b",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "predictions.json",
+      "sha256": "bba4aec74a948589b8df8b98dc9e686a87426d5c2760d899a651a226d96baeb6",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "reference-comparison.json",
+      "sha256": "8c6cb15c6e77627a44c7eccc898068b437a779315b4dd159a89cc67e7832b7cb",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "stationary-gaia-star.fits",
+      "sha256": "afa1570cf91d8c1bfd19a9f2f65c3fd4343381afadbb5acffed2c3d2c669fd27",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "synthetic-artifact.fits",
+      "sha256": "f6831f127cf039aaa624c15ab8b1ad1c6c3eb98b2b70c80d6ca0f9fb3064da7b",
+      "original_present": true,
+      "identical_to_frozen": true
+    },
+    {
+      "path": "wrong-match-offset-60arcsec.fits",
+      "sha256": "3980b76e41d64493cdcc5a1f205a929282ea70f4a0b24455588edf6693a43dad",
+      "original_present": true,
+      "identical_to_frozen": true
+    }
+  ],
+  "submission": false
+}

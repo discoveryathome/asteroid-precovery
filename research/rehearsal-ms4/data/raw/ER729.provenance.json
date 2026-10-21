@@ -1,0 +1,28 @@
+{
+  "url": "https://irsa.ipac.caltech.edu/data/DSS/images/dss2red/dss2red_ER729.fits",
+  "retrieved_at": "2026-10-20T06:32:03.437448+00:00",
+  "parent_bytes": 1061694720,
+  "parent_checksum": null,
+  "parent_checksum_reason": "Full plate intentionally not downloaded",
+  "header_range": [
+    0,
+    28799
+  ],
+  "header_range_sha256": "76d48d49e6caeb55bf0ccb356977ff653fb60722f0111fc6f4027bd5eec4aec4",
+  "pixel_range": [
+    351555840,
+    358513919
+  ],
+  "pixel_range_sha256": "8f3dab5fb963d4a75b700043221962218b5e9fe2fbb162b8137459282b37d98f",
+  "pixel_bounds_zero_based": [
+    3030,
+    3181,
+    7629,
+    7780
+  ],
+  "cutout_size_arcmin": 2.5,
+  "native_pixels": true,
+  "etag": null,
+  "last_modified": "Mon, 08 Sep 2008 23:23:49 GMT",
+  "sha256": "692150ebe44ddf4de8d25ca2d213281e82b457ae47c7973b70ed59f1628415a6"
+}

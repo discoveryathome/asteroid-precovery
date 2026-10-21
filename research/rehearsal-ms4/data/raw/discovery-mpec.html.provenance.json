@@ -1,0 +1,10 @@
+{
+  "path": "data/raw/discovery-mpec.html",
+  "url": "https://www.minorplanetcenter.net/iau/mpec/K02/K02W27.html",
+  "retrieved_at": "2026-10-20T06:26:32.500189+00:00",
+  "sha256": "3d71e583945a8c5201321222c132abbc2c3d146f20f31454ad0887f051b94f04",
+  "bytes": 25957,
+  "content_type": "text/html; charset=UTF-8",
+  "etag": null,
+  "last_modified": null
+}

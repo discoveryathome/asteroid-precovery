@@ -1,0 +1,66 @@
+{
+  "schema": "research-evidence-manifest/v1",
+  "files": [
+    {
+      "path": "research/scientific-audit-20261021/REPORT.md",
+      "sha256": "1076aed48f32e830f60fca46781df49c3551b467bfab242b29bafe4b1828f9f6",
+      "bytes": 5619
+    },
+    {
+      "path": "research/scientific-audit-20261021/cold-install.log",
+      "sha256": "b74af35534db99567616bffede742b2dcbdc5590ddd1b4cb5ed8d583a67118b3",
+      "bytes": 1283
+    },
+    {
+      "path": "research/scientific-audit-20261021/cold-package.log",
+      "sha256": "918a79df7799ed4419ad23237af39257c619bf84f31d5055cc254f3498fa2980",
+      "bytes": 508
+    },
+    {
+      "path": "research/scientific-audit-20261021/cold-receipt.json",
+      "sha256": "28ee9501477978844ee2ffff81e935ce5a7ba2f138210ea742b17246e983b7db",
+      "bytes": 3014
+    },
+    {
+      "path": "research/scientific-audit-20261021/cold-replay.log",
+      "sha256": "0c107b1f7b4844228d2c1fe7499827af1271556256e99d52e3998a8dba08eca8",
+      "bytes": 990
+    },
+    {
+      "path": "research/scientific-audit-20261021/cold-tests.log",
+      "sha256": "59412c9b111a479743d2cef2f6dfa1a03617c2f28c7d8075b82710dd0c1cdc50",
+      "bytes": 1186
+    },
+    {
+      "path": "research/scientific-audit-20261021/preflight.log",
+      "sha256": "0c107b1f7b4844228d2c1fe7499827af1271556256e99d52e3998a8dba08eca8",
+      "bytes": 990
+    },
+    {
+      "path": "research/scientific-audit-20261021/review-check.log",
+      "sha256": "8532071eaf244e1824211decdc58354211815c8f6987cdd021e69ecbe2a73636",
+      "bytes": 172
+    },
+    {
+      "path": "research/scientific-audit-20261021/review-request.json",
+      "sha256": "ff1aa66efc89109655b0d375c897120a2f8b3bd03453847abe05277be2f26bfb",
+      "bytes": 3044
+    },
+    {
+      "path": "research/scientific-audit-20261021/review-tests.log",
+      "sha256": "1bee312a9f2778085501f29e5b185249a2ba695be4d42c1267a54ab6278024d8",
+      "bytes": 583
+    },
+    {
+      "path": "research/scientific-audit-20261021/review_package.py",
+      "sha256": "60170021b919e46c713a5d798a7c2ea2b2e65f2e66986f5b8a52496a137467ec",
+      "bytes": 4464
+    },
+    {
+      "path": "research/scientific-audit-20261021/test_review_package.py",
+      "sha256": "711d6a23cb91cfbc61b3901f5c8bd8230c2fb78b84eab800fef2678444b7913d",
+      "bytes": 949
+    }
+  ],
+  "scope": "Local evidence package; software/hash checks do not establish independent scientific review."
+}
