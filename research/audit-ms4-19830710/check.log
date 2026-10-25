@@ -1,0 +1,138 @@
+{
+ "record": "1983-07-10",
+ "requested": {
+  "published_region": "S655",
+  "published_plate_id": "03YK",
+  "published_calendar_time": "1983-07-10T11:46:27.840000"
+ },
+ "returned": {
+  "REGION": "S728",
+  "PLATEID": "00TR",
+  "PLTLABEL": "J8626",
+  "DATE-OBS": "1983-06-14T13:03",
+  "SURVEY": "SERC-EJ"
+ },
+ "same_plate_as_exact_match": {
+  "plate_cards_compared": 146,
+  "differing": []
+ },
+ "selection": {
+  "blue_vs_red_centre_arcmin": {
+   "727": 0.36,
+   "728": 0.41
+  },
+  "probes": [
+   {
+    "probe": "1982-08-09",
+    "returned": 727,
+    "published": 727,
+    "nearest_centre": 727,
+    "largest_edge_margin": 727,
+    "deg_to_centre": {
+     "655": 3.279,
+     "656": 4.243,
+     "727": 2.75,
+     "728": 3.898,
+     "729": 8.611,
+     "730": 13.213
+    },
+    "edge_margin_deg": {
+     "655": 0.488,
+     "656": 0.109,
+     "727": 1.13,
+     "728": 0.122,
+     "729": -5.054,
+     "730": -9.888
+    }
+   },
+   {
+    "probe": "1983-06-14",
+    "returned": 728,
+    "published": 728,
+    "nearest_centre": 728,
+    "largest_edge_margin": 728,
+    "deg_to_centre": {
+     "655": 4.376,
+     "656": 3.261,
+     "727": 3.943,
+     "728": 2.668,
+     "729": 7.012,
+     "730": 11.585
+    },
+    "edge_margin_deg": {
+     "655": -0.002,
+     "656": 0.446,
+     "727": -0.006,
+     "728": 1.138,
+     "729": -3.387,
+     "730": -8.174
+    }
+   },
+   {
+    "probe": "1983-07-01",
+    "returned": 728,
+    "published": 656,
+    "nearest_centre": 728,
+    "largest_edge_margin": 728,
+    "deg_to_centre": {
+     "655": 4.208,
+     "656": 3.424,
+     "727": 3.703,
+     "728": 2.802,
+     "729": 7.255,
+     "730": 11.839
+    },
+    "edge_margin_deg": {
+     "655": 0.262,
+     "656": 0.412,
+     "727": 0.257,
+     "728": 1.172,
+     "729": -3.654,
+     "730": -8.449
+    }
+   },
+   {
+    "probe": "1983-07-10",
+    "returned": 728,
+    "published": 655,
+    "nearest_centre": 728,
+    "largest_edge_margin": 728,
+    "deg_to_centre": {
+     "655": 4.131,
+     "656": 3.496,
+     "727": 3.599,
+     "728": 2.874,
+     "729": 7.367,
+     "730": 11.955
+    },
+    "edge_margin_deg": {
+     "655": 0.381,
+     "656": 0.403,
+     "727": 0.377,
+     "728": 1.181,
+     "729": -3.776,
+     "730": -8.574
+    }
+   }
+  ]
+ },
+ "exclusion": {
+  "returned_epoch": "1983-06-14T13:03",
+  "cutout_box_px": [
+   10952.0,
+   11102.0,
+   2423.0,
+   2573.0
+  ],
+  "object_px_at_returned_epoch": [
+   10217.5,
+   2405.33
+  ],
+  "gap_outside_box_px": 734.7,
+  "gap_outside_box_arcmin": 20.81,
+  "horizons_to_cutout_centre_arcmin": 23.07,
+  "cutout_half_diagonal_arcmin": 3.0
+ },
+ "controls": "flipped byte fails hash; S655/03YK/1983-07-10 header accepted; patched header breaks same-plate; object inside box gives zero gap"
+}
+PASS: 1983-07-10 request for S655/03YK returned S728/00TR (J8626, 1983-06-14T13:03); same plate as the exact 1983-06-14 match (146 non-cutout header cards identical); nearest-centre and edge-margin selection both reproduce all 4 STScI defaults; object 20.81' outside the returned cutout at the returned epoch. No detection or scientific-acceptance verdict.
