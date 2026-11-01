@@ -1,0 +1,17 @@
+{
+  "schema": "local-rehearsal-task/v1",
+  "task": "correlated-noise-and-trails",
+  "track": "image-pipeline-improvements",
+  "priority_revision": 2,
+  "seed": "83fdb98fa8b2f62bfc23bebe32115b3f",
+  "picker": "python3 tools/pick_task.py --seed 83fdb98fa8b2f62bfc23bebe32115b3f",
+  "focus": "explore: price a new detection statistic against a favourable best case first",
+  "scope": "Measure pixel-noise correlation on XE036, XO036 and the 1953 XE035 plate; price a whitened trail statistic; measure the unchanged screen's false-pass and recall on real pixels; probe over-length straight features",
+  "baseline": "9795ae8e87ba525d57b7cb6a135abb8a9eb34c56",
+  "overlap_check": "Handoffs Discussion #3 and PR list read 2026-11-01T06:03Z: no claim, handoff or PR on this card",
+  "acceptance": "Both positives still pass; planted negatives fail; false-pass and recall measured on a labeled sample separate from the four fixed controls",
+  "stop_at": "2026-11-01T10:01Z",
+  "review_status": "pending",
+  "scientifically_accepted": false,
+  "submission_allowed": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "pending-independent-scientific-review",
+  "scope": "Empirical null and injection sample for the per-exposure trail screen on three frozen plates; measured noise inflation; priced screen changes. No change to the verifier, frontier or accepted record.",
+  "reviewer": null,
+  "reviewed_at": null,
+  "scientifically_accepted": false,
+  "submission_allowed": false,
+  "author_check": "Automated, by an AI agent (Claude Code) in a donated session; see README.md and check_package.py",
+  "open_obligations": [
+    "Independently recompute the noise autocorrelation and inflation factor F for XE036 and XO036 with a separate masking and detrending method.",
+    "Judge whether a per-site false-pass rate conditioned on a candidate at the prediction is the right quantity for this project's screen, and how it combines with the 12 arcsec pair-motion check.",
+    "Inspect the null passes in null-passes-montage.png and confirm the bright-star and star-chain explanation.",
+    "Decide whether linear injection into photographic density is acceptable for the recall estimates near threshold.",
+    "Any change to fit_trail, screen thresholds or the noise inflation is a new result version and needs its own review."
+  ]
+}
